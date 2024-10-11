@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { cn } from '../../utils/cn.js';
 export const FlipWords = ({
   words,
-  duration = 3000,
+  duration = 2000,
   className,
 }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
@@ -56,7 +56,7 @@ export const FlipWords = ({
           position: "absolute",
         }}
         className={cn(
-          "z-10 inline-block relative text-left text-blue-500 px-2",
+          "z-10 inline-block relative text-left text-purple-900 px-2",
           className
         )}
         key={currentWord}

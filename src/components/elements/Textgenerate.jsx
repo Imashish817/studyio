@@ -2,7 +2,7 @@
 import { TextGenerateEffect } from "../../components/ui/text-generate-effect";
 
 const words =
-  "Copy paste the most trending components and use them in your websites without having to worry about styling and animations.";
+  "With the support of the Richly Experienced Team from the Industry, we are setting a new culture in international education, which helps students define their careers in a meaningful way";
 export function TextGenerateEffectDemo() {
   return <TextGenerateEffect words={words} />;
 }

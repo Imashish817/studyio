@@ -4,35 +4,71 @@ import { HeroScrollDemo } from "./elements/Containerscrollanimation";
 import RotatingWords from "./RotatingWords";
 import { TextGenerateEffectDemo } from "./elements/Textgenerate";
 import { AnimatedPinDemo } from "./elements/ThreeDpin";
+import { GlobeDemo } from "./elements/Globe";
+import home from "../components/data/img/home.jpg"
+import { BorderButton } from "./elements/GlowButton";
+// import { MovingBorderDemo } from "./elements/GlowButton";
+import logo from "../components/data/img/logo.png"
+import { CardHoverEffectDemo } from "./elements/Cardhover";
+import { InfiniteMovingCardsDemo } from "./elements/Infinitemovingcard";
+import Footer from "./Footer";
+import certificate from "../components/data/img/certificate.png"
+import { TimelineDemo } from "./elements/TimeLine";
+// import { TimelineDemo } from "./elements/TimeLine";
+// import {  TracingBeamDemo } from "./elements/TracingBeam";
+// import { TracingBeamDemo } from "./elements/TracingBeam";//src\components\elements\TracingBeam.jsx
 
 const Home = () => {
   const words = ["experience", "abroad journey", "Culture"]; // Add more words as needed
   return (
-    // <div className="text-center">
-    //   <h1 className="text-4xl font-bold text-white mt-14">
-    //   Redefining the Study {" "}
-    //     <RotatingWords words={words} interval={3000} />
-    //   </h1>
-    //   <div className=" mt-14">
-    //     <TextGenerateEffectDemo />
-    //   </div>
-    //   <div className="flex justify-center items-center">
-    //     <div className=" justify-center items-center ml-20 mt-0">
-    //       <FlipWordsDemo />
-    //       {/* <AnimatedPinDemo /> */}
-    //     </div>
-    //     <div className="justify-center items-center ml-20 mt-0">
-    //       <AnimatedPinDemo />
-    //     </div>
-    //   </div>
-    //   <HeroScrollDemo />
-    // </div>
 
-    <div className="p-2">
-       <FlipWordsDemo />
-       <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
-        helo</button>
-    </div>
+    <>
+      <div className="flex justify-center align-middle m-10">
+        <div className="mt-16 ml-16  ">
+          {/* <img src={logo} className="h-20 mt-1 ml-auto mr-auto block"></img> */}
+          <FlipWordsDemo />
+          <TextGenerateEffectDemo />
+          {/* <p className="font-light ">With the support of the Richly Experienced Team from the Industry, we are setting a new culture in international education, which helps students define their careers in a meaningful way</p> */}
+          <div className=" flex my-5">
+            <BorderButton name={"Start Your New Journy"} />
+            <BorderButton name={"Get Your personalised Plan for FREE "} />
+          </div>
+          <div className="flex justify-start my-5 mt-20">
+            <div>
+              <p className="font-bold  px-2 text-center">1,00,000+</p>
+              <p className=" px-2"> Success Stories</p>
+            </div>
+            <div className="border border-x-2 rounded-2xl border-purple-900"></div>
+            <div>
+              <p className="font-bold  px-2 text-center">10,000+</p>
+              <p className="px-2"> Preferred Courses</p>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div style={{
+          backgroundImage: `url(${home})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '50%',
+          height: '80vh', // Adjust as needed
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+          {/* Add any text or content you want on the cover page */}
+
+        </div>
+      </div>
+      <InfiniteMovingCardsDemo />
+      <TimelineDemo />
+      <GlobeDemo className="" />
+      <CardHoverEffectDemo />
+      <Footer />
+
+    </>
   );
 };
 

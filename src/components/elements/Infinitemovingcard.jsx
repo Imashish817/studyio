@@ -1,20 +1,16 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-black dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <p className="text-center font-bold text-2xl text-white mt-4">
-        About My Experience
-      </p>
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
-    </div>
+    (<div
+      className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+<p className="text-center font-bold text-2xl text-black mt-4">
+From Dreamers to Achievers
+      </p>      <InfiniteMovingCards items={testimonials} direction="right" speed="fast" />
+    </div>)
   );
 }
 
@@ -24,6 +20,7 @@ const testimonials = [
       "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
     name: "Charles Dickens",
     title: "A Tale of Two Cities",
+
   },
   {
     quote:

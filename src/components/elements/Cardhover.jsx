@@ -1,50 +1,62 @@
 import React from "react";
 import { HoverEffect } from "../ui/card-hover-effect";
-
+import priya from '../data/img/Priya.jpg'
+import Ashima from '../data/img/Ashima Vij.jpg'
+import Monika from '../data/img/Monika.JPG'
+import ChiragMehta from '../data/img/ChiragMehta.JPG'
 export function CardHoverEffectDemo() {
   return (
     <div className="max-w-5xl mx-auto px-8">
-      <p className="text-center font-bold text-2xl text-white mt-4">
-        About My Expertise
+      <p className="text-center font-bold text-2xl text-black mt-4">
+      Meet Our Team
       </p>
+      <div className="flex flex-row-reverse">
       <HoverEffect items={projects} />
+      </div>
+     
     </div>
   );
 }
 export const projects = [
   {
-    title: "MERN STACK",
+    title: "Chirag Mehta",
+    post: "CEO",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    // link: "https://stripe.com",
+      `Chirag Mehta is an enthusiastic and highly organized leader with over 11 years of experience in the education industry. As the CEO of Study Culture, he is dedicated to advancing the international education landscape by leveraging his deep understanding of global educational
+      systems, processes, student and institutional needs.`,
+    img: ChiragMehta,
   },
   {
-    title: "PYHTON DEVELOPER",
+    title: "Dr. Monika Bargujjar",
+    post: "Head of Career CounsellingEO",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    // link: "https://netflix.com",
+      `Dr. Monika Bargujjar is the Head of Career Counselling at Study Culture, bringing extensive
+      knowledge and expertise in psychology to help students navigate their career paths. With a PhD
+      in Applied Psychology, she has a strong foundation in understanding human behavior,
+      complemented by her experience teaching graduate and postgraduate students.`,
+      img: Monika,
   },
   {
-    title: "SQL DEVELOPER",
+    title: "Ashima Vij",
+    post: "Head of Services & Marketing",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    // link: "https://google.com",
+      `Ashima Vij is the Head of Services & Marketing at Study Culture, bringing over 10 years of
+      diverse experience across various industries, including more than 4 years in the education
+      sector. She holds a Master’s degree in Commerce, which equips her with strong analytical and
+      strategic skills essential for navigating the complexities of service delivery and marketing in a
+      competitive environment.`,
+      img: Ashima,
   },
   {
-    title: "AI DEVELOPER",
+    title: "Priya Kumra",
+    post: "Head of ELT and Operations",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    // link: "https://meta.com",
+      `Priya Kumra serves as the Head of English Language Training (ELT) and Operations at Study
+      Culture, bringing a wealth of experience and expertise as an IELTS trainer. With an MBA in
+      Finance and Marketing and a BA in Economics (Honours), Priya combines her strong academic
+      foundation with a genuine passion for empowering students to achieve their language
+      proficiency goals.`,
+      img: priya,
   },
-  {
-    title: "REACT DEVELOPER",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    // link: "https://amazon.com",
-  },
-  {
-    title: "ANDROID DEVELOPER",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-  },
+ 
 ];

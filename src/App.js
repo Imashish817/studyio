@@ -4,7 +4,8 @@
 // import { GlobeDemo } from "./components/elements/Globe.jsx";
 // import { BentoGridDemo } from "./components/elements/Bentogrid.jsx";
 // import { SparklesPreview } from "./components/elements/Sparkles.jsx";
-// import { FloatingNavDemo } from "./components/elements/Floating.jsx";
+import { FloatingNavDemo } from "./components/elements/Floating.jsx";
+import logo from "../src/components/data/img/logo.png"
 // import { ThreeDCardDemo } from "./components/elements/Threedcard.jsx";
 // import { LampDemo } from "./components/elements/Lamp";
 // import { AnimatedModalDemo } from "./components/elements/Animatedmodal.jsx";
@@ -57,7 +58,7 @@
 //           </div>
 //         </div>
 //       </div>
-//       {/* <TracingBeamDemo /> */}
+// {/* <TracingBeamDemo /> */}
 //       <AnimatedPinDemo />
 //       <BentoGridDemo />
 //       <EvervaultCardDemo />
@@ -77,18 +78,23 @@ import Components from "./components/Components";
 import GitHubRepo from "./components/code";
 
 import "./App.css";
+import WhatsApp from "./components/elements/whatsapp.jsx";
 
 function App() {
-  return (
-    <div className="bg-black min-h-screen text-white">
-      <Navbar />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/components" element={<Components />} />
-        <Route path="/code" element={<GitHubRepo />} />
-      </Routes>
+  return (<>
+    <div className=" min-h-screen text-black ">
+      <div className="grid grid-cols-2 ">
+        <div><img src={logo} className="h-14 mt-7 ml-10  self-start"></img></div>
+        <div className="self-end"> <FloatingNavDemo /></div>
+      </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/components" element={<Components />} />
+      <Route path="/code" element={<GitHubRepo />} />
+    </Routes>
+    <WhatsApp/>
     </div>
+  </>
   );
 }
 
