@@ -414,8 +414,7 @@ export function GlobeDemo() {
           </h2>
           <p
             className="text-center text-base md:text-sm font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-             We Help Students Get Admitted Into the Best International Educational Institutions
-An Easy-to-Use Platform Built to Deliver Quality Applications and More
+            From IELTS/PTE coaching to  Visa Process, we give personalized support throughout your Study Abroad Journey.
           </p>
         </motion.div>
         <div

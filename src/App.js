@@ -79,20 +79,26 @@ import GitHubRepo from "./components/code";
 
 import "./App.css";
 import WhatsApp from "./components/elements/whatsapp.jsx";
+import ContactUs from "./components/ContactUs.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (<>
     <div className=" min-h-screen text-black ">
-      <div className="grid grid-cols-2 ">
-        <div><img src={logo} className="h-14 mt-7 ml-10  self-start"></img></div>
+      <div className="h-8 bg-purple-900 w-full rounded-t-xl mb-5">
+        <h3 className="text-white text-center p-1">Some Great offers of seminar details....🎁</h3>
+      </div>
+      <div className="grid grid-cols-2 lg:grid lg:grid-cols-2">
+        <div><img src={logo} className="h-16 mt-7 ml-24  self-start"></img></div>
         <div className="self-end"> <FloatingNavDemo /></div>
       </div>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/components" element={<Components />} />
+      <Route path="/contact" element={<ContactUs />} />
       <Route path="/code" element={<GitHubRepo />} />
     </Routes>
     <WhatsApp/>
+    <Footer/>
     </div>
   </>
   );

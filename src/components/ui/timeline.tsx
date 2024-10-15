@@ -1,4 +1,3 @@
-
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -28,8 +27,17 @@ export const Timeline = ({
     (<div
       className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}>
-     
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-10">
+      <div className="max-w-7xl mx-auto  px-4 md:px-8 lg:px-10  ">
+      <p
+          className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm font-semibold ">
+          Offerings
+        </p>
+        <p className="text-lg text-purple-900 md:text-4xl mb-4 dark:text-white max-w-4xl font-semibold ">
+        Study abroad <span className="text-orange-500 drop-shadow-xl">with us!</span>
+        </p>
+       
+      </div>
+      <div ref={ref} className="relative max-w-7xl mx-auto pb-10 ">
         {data.map((item, index) => (
           <div key={index} className="flex justify-start pt-10 md:pt-40 md:gap-10">
             <div
@@ -47,7 +55,7 @@ export const Timeline = ({
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
               <h3
-                className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+                className="md:hidden block text-2xl mb-4 text-left font-bold text-black dark:text-neutral-500">
                 {item.title}
               </h3>
               {item.content}{" "}

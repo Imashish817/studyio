@@ -9,7 +9,7 @@ import {
 } from "../ui/animated-modal";
 import { motion } from "framer-motion";
 
-export function AnimatedModalDemo() {
+export function AnimatedModalDemo({name}) {
   const images = [
     "https://images.unsplash.com/photo-1517322048670-4fba75cbbb62?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1573790387438-4da905039392?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -20,9 +20,9 @@ export function AnimatedModalDemo() {
   return (
     <div className="py-35  flex items-center justify-center mb-4">
       <Modal>
-        <ModalTrigger className="bg-white dark:bg-white dark:text-black text-black flex justify-center group/modal-btn">
-          <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
-            ABOUT ME
+        <ModalTrigger className="bg-purple-900 dark:bg-white dark:text-black text-black flex justify-center group/modal-btn">
+          <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500 text-white ">
+           Send my Query
           </span>
           <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
             ✈️
@@ -31,11 +31,11 @@ export function AnimatedModalDemo() {
         <ModalBody>
           <ModalContent>
             <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8">
-              Book your trip to{" "}
-              <span className="px-1 py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200">
-                ASHUTOSH
+              Hi{" "}
+              <span className="px-1 py-0.5 ">
+                {name}
               </span>{" "}
-              now! ✈️
+             Our Team will contact you soon!!! ✈️
             </h4>
             <div className="flex justify-center items-center">
               {images.map((image, idx) => (
@@ -66,65 +66,9 @@ export function AnimatedModalDemo() {
                 </motion.div>
               ))}
             </div>
-            <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
-              <div className="flex  items-center justify-center">
-                <PlaneIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  A Software Engineer
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <ElevatorIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  MERN stack Developer
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <VacationIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  1+ years of Experience
-                </span>
-              </div>
-              <div className="flex  items-center justify-center">
-                <FoodIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  7+ projects
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <MicIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  2 Internships
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <ParachuteIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Hobbies - Music, Sports
-                </span>
-              </div>
-            </div>
+            
           </ModalContent>
-          <ModalFooter className="gap-4">
-            <a
-              href="https://www.linkedin.com/in/ashutosh-raj-gupta-18230820b/"
-              target="_blank"
-              className="no-underline"
-            >
-              <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
-                Linkeldn
-              </button>
-            </a>
-            <a
-              href="https://github.com/AshutoshRajGupta"
-              target="_blank"
-              className="no-underline"
-            >
-              <button className="w-40 h-10 rounded-xl bg-white text-black border border-black text-sm">
-                Github
-              </button>
-            </a>
-          </ModalFooter>
+          
         </ModalBody>
       </Modal>
     </div>

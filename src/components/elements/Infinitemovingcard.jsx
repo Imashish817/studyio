@@ -7,9 +7,17 @@ export function InfiniteMovingCardsDemo() {
   return (
     (<div
       className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-<p className="text-center font-bold text-2xl text-black mt-4">
-From Dreamers to Achievers
-      </p>      <InfiniteMovingCards items={testimonials} direction="right" speed="fast" />
+      <div className="max-w-7xl mx-auto  px-4 md:px-8 lg:px-10 ">
+      <p
+          className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm font-semibold text-left">
+         Testimonials
+        </p>
+        <p className="text-lg text-purple-900 md:text-4xl mb-4 dark:text-white max-w-4xl font-semibold">
+        From Dreamers <span className="text-orange-500 drop-shadow-xl">to Achievers</span>
+        </p>
+       
+      </div>      
+      <InfiniteMovingCards items={testimonials} direction="right" speed="fast" />
     </div>)
   );
 }
