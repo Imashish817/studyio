@@ -35,10 +35,21 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "overrides": {
+    "typescript": "$typescript"
+},
   "devDependencies": {
+    "@aws-amplify/backend": "^1.5.0",
+    "@aws-amplify/backend-cli": "^1.2.9",
     "autoprefixer": "^10.4.19",
+    "aws-cdk": "^2.162.1",
+    "aws-cdk-lib": "^2.162.1",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.24.0",
     "postcss": "^8.4.39",
-    "tailwindcss": "^3.4.6"
+    "tailwindcss": "^3.4.6",
+    "tsx": "^4.19.1",
+    "typescript": "3.2.1"
   },
   "browserslist": {
     "production": [
