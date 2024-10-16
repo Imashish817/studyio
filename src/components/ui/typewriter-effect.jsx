@@ -1,4 +1,4 @@
-"use client";
+
 
 import { cn } from "../../utils/cn.js";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";

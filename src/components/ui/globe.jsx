@@ -1,4 +1,4 @@
-"use client";
+
 import React, { useEffect, useRef, useState } from "react";
 import { Color, Fog, PerspectiveCamera, Vector3, Scene } from "three"; // Import Scene from three
 import { extend, Canvas, useThree } from "@react-three/fiber";

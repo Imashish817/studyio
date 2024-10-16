@@ -1,4 +1,4 @@
-// "use client";
+// 
 // import React, { useEffect, useRef, useState, any } from "react";
 // import { useMotionValueEvent, useScroll } from "framer-motion";
 // import { motion } from "framer-motion";
@@ -101,7 +101,7 @@
 //   );
 // };
 
-"use client";
+
 import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";

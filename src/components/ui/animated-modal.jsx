@@ -1,4 +1,4 @@
-"use client";
+
 import { cn } from "../../utils/cn.js";
 import { AnimatePresence, motion } from "framer-motion";
 import React, {
