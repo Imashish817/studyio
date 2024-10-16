@@ -6,8 +6,8 @@ export function FlipWordsDemo() {
 
   return (
     <div className="h-[4rem] flex  items-center ">
-      <div className="text-4xl font-semibold text-nowrap text-orange-500 m-5">
-      Redefining the Study
+      <div className="text-2xl lg:text-4xl font-semibold text-nowrap text-orange-500 m-5 text-center">
+      Redefining the Study<br className="lg:hidden"/>
         <FlipWords words={words} /> <br />
 
 

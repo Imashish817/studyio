@@ -15,8 +15,8 @@ function App() {
       <div className="h-8 bg-purple-900 w-full rounded-t-xl mb-5">
         <h3 className="text-white text-center p-1">Some Great offers of seminar details....🎁</h3>
       </div>
-      <div className="grid grid-cols-2 lg:grid lg:grid-cols-2">
-        <div><img src={logo} className="h-16 mt-7 ml-24  self-start"></img></div>
+      <div className="grid grid-cols-2 lg:grid lg:grid-cols-2 sm:flex sm:justify-center">
+        <div><img src={logo} className="h-16 mt-7 md:ml-24 lg:ml-24"></img></div>
         <div className="self-end"> <FloatingNavDemo /></div>
       </div>
     <Routes>

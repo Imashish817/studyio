@@ -11,15 +11,7 @@ const Navbar = () => {
         <NavLink exact to="/" className="px-3 py-2 hover:bg-gray-700 rounded">
           Home
         </NavLink>
-        <NavLink
-          to="/components"
-          className="px-3 py-2 hover:bg-gray-700 rounded"
-        >
-          Components
-        </NavLink>
-        <NavLink to="/code" className="px-3 py-2 hover:bg-gray-700 rounded">
-          Code
-        </NavLink>
+       
       </div>
     </nav>
     </>
