@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { AnimatedModalDemo } from './elements/Animatedmodal'
+import  AnimatedModalDemo  from './elements/Animatedmodal'
 
 const ContactUs = () => {
     const [name, setName] = useState('');
