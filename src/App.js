@@ -16,7 +16,7 @@ function App() {
         <h3 className="text-white text-center p-1">Some Great offers and seminar details....🎁</h3>
       </div>
       <div className="flex justify-center lg:grid lg:grid-cols-2 ">
-        <div><img src={logo} className="h-16 mt-[30%] lg:mt-[5%] lg:ml-24"></img></div>
+        <div><img src={logo} className="h-16 mt-[30%] lg:mt-[1%] lg:ml-24"></img></div>
         <div className="self-end"> <FloatingNavDemo /></div>
       </div>
     <Routes>

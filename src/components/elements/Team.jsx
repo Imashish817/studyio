@@ -123,13 +123,13 @@ export function ExpandableCardDemo() {
       ) : null}
     </AnimatePresence>
     <ul
-      className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
+      className="max-w-4xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 justify-center gap-4">
       {cards.map((card, index) => (
         <motion.div
           layoutId={`card-${card.title}-${id}`}
           key={card.title}
           onClick={() => setActive(card)}
-          className="p-4 flex flex-col  hover:bg-neutral-50  rounded-xl cursor-pointer">
+          className="p-4 flex flex-col  hover:bg-neutral-50  rounded-xl cursor-pointer w-full">
           <div className="flex gap-4 flex-col  w-full">
             <motion.div layoutId={`img-${card.title}-${id}`}>
               <img
@@ -199,7 +199,7 @@ const cards = [
     ctaLink: "",
     content: () => {
       return (
-        (<p>LChirag Mehta is an enthusiastic and highly organized leader with over 11 years of experience in
+        (<p>Chirag Mehta is an enthusiastic and highly organized leader with over 11 years of experience in
             the education industry. As the CEO of Study Culture, he is dedicated to advancing the
             international education landscape by leveraging his deep understanding of global educational
             systems, processes, student and institutional needs.
@@ -209,9 +209,22 @@ const cards = [
     },
   },
   {
-    description: "Head of Career CounsellingEO",
+    description: "Director",
+    title: "Sanjay Batra",
+    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/SanjayBatra.jpg?alt=media&token=7080f643-4348-4887-9f14-e80c2bfe6918",
+    ctaText: "Visit",
+    ctaLink: "",
+    content: () => {
+      return (
+        (<p>Mr. Sanjay Batra is an accomplished entrepreneur with over 30 years of experience spanning various industries, including retail, technology, real estate, and consultancy. His diverse business portfolio reflects his exceptional abilities in strategic planning, financial management, and operational leadership. Known for his visionary approach, Mr. Batra has successfully founded and led numerous ventures, transforming them into thriving enterprises
+                  </p>)
+      );
+    },
+  },
+  {
+    description: "Head - Career Counselling",
     title: "Dr. Monika Bargujjar",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Monika.JPG?alt=media&token=f3a96926-5208-4b42-8392-f0a94d541863",
+    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Monika.JPG?alt=media&",
     ctaText: "Visit",
     ctaLink: "",
     content: () => {
@@ -226,11 +239,11 @@ const cards = [
   },
 
   {
-    description: "Head of Services & Marketing",
+    description: "Head - Services & Marketing",
     title: "Ashima Vij",
     src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Ashima%20Vij.jpg?alt=media",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "",
     content: () => {
       return (
         (<p>Ashima Vij is the Head of Services & Marketing at Study Culture, bringing over 10 years of
@@ -243,11 +256,11 @@ const cards = [
     },
   },
   {
-    description: "Head of ELT and Operations",
+    description: "Head - ELT and Operations",
     title: "Priya Kumra",
     src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Priya-2.jpg?alt=media",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "",
     content: () => {
       return (
         (<p>Priya Kumra serves as the Head of English Language Training (ELT) and Operations at Study

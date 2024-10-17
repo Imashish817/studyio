@@ -7,25 +7,25 @@ const HeroSection = () => {
   return (
     <div>
        <section class="relative">
-      <div class="container flex flex-col-reverse lg:flex-row lg:items-start items-center mt-2 lg:mt-1">
-        <div class="flex flex-1 flex-col items-center lg:items-start lg:mt-32 lg:ml-20 ">
+      <div class="container flex flex-col-reverse lg:flex-row lg:items-start items-center mt-2">
+        <div class="flex flex-1 flex-col items-center lg:items-start lg:mt-[10%] lg:ml-20 ">
         <FlipWordsDemo />
         <TextGenerateEffectDemo />
           <div class="flex justify-center flex-wrap gap-2 md:gap-5">
          
-            <BorderButton name={"Start Your New Journy"} />
+            <BorderButton name={"Start Your New Journey"} />
             <BorderButton name={"Get Your personalised Plan for FREE "} />
          
           </div>
-          <div className="flex justify-start my-5 mt-15">
+          <div className="flex justify-start my-5 mt-[10%]">
             <div>
-              <p className="font-bold  px-2 text-center">1,00,000+</p>
-              <p className=" px-2"> Success Stories</p>
+              <p className="font-bold  px-5 text-center">1,45,000+</p>
+              <p className=" px-5 text-sm text-center"> Success Stories</p>
             </div>
             <div className="border border-x-2 rounded-2xl border-purple-900"></div>
             <div>
-              <p className="font-bold  px-2 text-center">10,000+</p>
-              <p className="px-2"> Preferred Courses</p>
+              <p className="font-bold  px-5 text-center">2,400+</p>
+              <p className="px-5 text-sm  text-center"> Partner Campuses</p>
             </div>
 
 
