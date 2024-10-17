@@ -11,12 +11,12 @@ import Footer from "./components/Footer.jsx";
 
 function App() {
   return (<>
-    <div className=" min-h-screen text-black ">
+    <div className="min-h-screen text-black ">
       <div className="h-8 bg-purple-900 w-full rounded-t-xl mb-5">
-        <h3 className="text-white text-center p-1">Some Great offers of seminar details....🎁</h3>
+        <h3 className="text-white text-center p-1">Some Great offers and seminar details....🎁</h3>
       </div>
-      <div className="grid grid-cols-2 lg:grid lg:grid-cols-2 sm:flex sm:justify-center">
-        <div><img src={logo} className="h-16 mt-7 md:ml-24 lg:ml-24"></img></div>
+      <div className="flex justify-center lg:grid lg:grid-cols-2 ">
+        <div><img src={logo} className="h-16 mt-[30%] lg:mt-[5%] lg:ml-24"></img></div>
         <div className="self-end"> <FloatingNavDemo /></div>
       </div>
     <Routes>

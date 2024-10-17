@@ -20,7 +20,7 @@ export function AnimatedModalDemo({name}) {
   return (
     <div className="py-35  flex items-center justify-center mb-4">
       <Modal>
-        <ModalTrigger className="bg-purple-900 dark:bg-white dark:text-black text-black flex justify-center group/modal-btn">
+        <ModalTrigger className="bg-purple-900   text-black flex justify-center group/modal-btn">
           <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500 text-white ">
            Send my Query
           </span>
@@ -30,7 +30,7 @@ export function AnimatedModalDemo({name}) {
         </ModalTrigger>
         <ModalBody>
           <ModalContent>
-            <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center mb-8">
+            <h4 className="text-lg md:text-2xl text-neutral-600  font-bold text-center mb-8">
               Hi{" "}
               <span className="px-1 py-0.5 ">
                 {name}
@@ -54,7 +54,7 @@ export function AnimatedModalDemo({name}) {
                     rotate: 0,
                     zIndex: 100,
                   }}
-                  className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+                  className="rounded-xl -mr-4 mt-4 p-1 bg-white  border border-neutral-100 flex-shrink-0 overflow-hidden"
                 >
                   <img
                     src={image}
