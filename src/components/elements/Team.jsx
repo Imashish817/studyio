@@ -194,7 +194,7 @@ const cards = [
   {
     description: "CEO",
     title: "Chirag Mehta",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Chirag%20Mehta%20(1).webp",
+    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Chirag.webp?alt=media",
     ctaText: "Visit",
     ctaLink: "",
     content: () => {
