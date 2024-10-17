@@ -194,7 +194,7 @@ const cards = [
   {
     description: "CEO",
     title: "Chirag Mehta",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Chirag%20Mehta.JPG?alt=media&token=b247ecb9-3915-48b9-9287-37eb36f6b180",
+    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Chirag%20Mehta%20(1).webp",
     ctaText: "Visit",
     ctaLink: "",
     content: () => {
@@ -245,7 +245,7 @@ const cards = [
   {
     description: "Head of ELT and Operations",
     title: "Priya Kumra",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Priya.jpg?alt=media",
+    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Priya-2.jpg?alt=media",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
