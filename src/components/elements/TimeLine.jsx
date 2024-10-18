@@ -6,34 +6,34 @@ import { BorderButton } from "./GlowButton.jsx";
 import Btn from "./Btn.jsx";
 
 export function TimelineDemo() {
-  const crack = ["Mock Exams", "Diagnostic Assessment", "Experienced Instructors", "Proven Results", "Regular Progress Tracking"];
-  const college = ["Comparison Features", "Comprehensive College Database", "Expert Guidance", "AI-Powered Recommendations"];
-  const Finance = ["Personalized Financial Planning", "⁠Scholarships Up to 1.5 Cr", " 50% Scholarship for Women", "Financial Literacy", "Complete Refund Guarantee"];
+  const pcc = ["Comprehensive Assessment", "Career Path Mapping", "Goal Setting and Action Planning", "Career Transition Support", "Skill Assessment and Gap Analysis"];
+  const tp = ["Practice Tests", "Question Banks", "Performance Analytics", "Adaptive Learning","Community Forum"];
+  const va = ["Mock Interviews", "Application Guidance", "Visa Requirements", "Country-Specific Information", "Post-Visa Support"];
+  const ela = ["Utility Bill Assistance", "Hostel/PG Listings", "Repayment Plans", "Safety and Security", "Accommodation Verification"];
+  const sfs = ["Scholarship Database", "Remittance Services", "Customer Support", "Financial Aid Calculator", "Eligibility Checker"];
   const data = [
     {
-      title: "Crack IELTS",
+      title: "Personalized Career Counselling",
       content: (
         <div>
-          <h1 className="mb-4 font-bold">Ace Your IELTS, PTE, and More with a Customized Preparation Plan</h1>
+          <h1 className="mb-4 font-bold">Expert Guidance, Personalized Solutions.</h1>
           <p
-            className="text-netural   text-xs md:text-sm font-normal mb-1 ">
-            Are you aiming to conquer the IELTS or PTE exams and secure admission to your dream university? Look no further! Our customized preparation plans are designed to cater to your unique needs and help you achieve your language goals
-          </p>
+            className="text-netural   text-xs md:text-sm font-normal mb-1 ">We offer personalized guidance to students, helping them align their academic goals with their desired career path. By assisting them in finding suitable courses and institutions, we empower students to make informed decisions that set them up for future success.        </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/cartoon-graduate-celebrates-their-achievement-by-riding-scroll_875825-200589-removebg-preview.png?alt=media&token=d872403e-da9d-4ba4-8dc7-66f372a7f7f3"
+              src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/cc.png?alt=media&token=7abb9304-c4df-44c8-8995-88ac4422b132"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4 " />
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/10473220-removebg-preview.png?alt=media&token=721467cd-a62f-4f7f-8a4b-56743a11cec1"
+              src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/cc2-removebg-preview.png?alt=media&token=0ac69d51-e33c-405d-9a34-b9cf3e92c2a9"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4" />
           </div>
-          <Chips items={crack} />
+          <Chips items={pcc} />
           {/* <div className="grid grid-cols-2 gap-4">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/view-3d-book-with-globe.jpg?alt=media&token=9c9891d5-7196-49dd-833d-103fb701d4a8"
@@ -66,237 +66,116 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Shortlist Colleges",
+      title: "Test Preparation",
       content: (
         <div>
-        <h1 className="mb-4 font-bold">Find Your Perfect Fit: College Shortlisting Made Easy</h1>
+        <h1 className="mb-4 font-bold">The Ultimate Test Prep Experience</h1>
         <p
-          className="text-netural   text-xs md:text-sm font-normal mb-1 ">
-Discover your dream college with our intuitive shortlisting tool. Explore top institutions worldwide, compare programs, and uncover the perfect match for your academic and career goals. Our expert guidance ensures you make informed decisions and embark on a fulfilling educational journey.        </p>
+          className="text-netural   text-xs md:text-sm font-normal mb-1 ">Are you feeling overwhelmed by the upcoming exams? Don't worry, we're here to help. Our expert tutors offer personalized guidance and effective strategies to help you ace your exams. With our comprehensive test preparation courses, you'll gain the confidence and skills needed to excel. Learn from experienced educators, practice with realistic exam simulations, and discover proven techniques to maximize your performance.</p>
         <div className="grid grid-cols-2 gap-4">
         <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/search1.png?alt=media&token=7e5f923b-9095-4333-a6d1-ac0ddfc60024"
+            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/exam-removebg-preview.png?alt=media&token=00e8ea74-c7e1-4f48-a6f9-92d056712c3e"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4" />
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/3d-search-job-vacancy-illustration-employee-search-icon-candidate-vacancy-job-research-resume-trendy-modern-vector-3d-style_1036687-60082-removebg-preview.png?alt=media&token=4e33cd87-1d02-4fe3-b2d7-e79fc542d0c8"
+            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/OIP.jfif?alt=media&token=279a6676-c295-41a5-81e9-d14a53b43d2e"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4 " />
           
         </div>
-        <Chips items={college} />
+        <Chips items={tp} />
       </div>
       ),
     },
     {
-      title: "Financial Planning",
+      title: "Visa Assistance",
       content: (
         <div>
-        <h1 className="mb-4 font-bold">Financial Planning for Your Overseas Adventure</h1>
+        <h1 className="mb-4 font-bold">Navigate the Visa Process with Confidence</h1>
         <p
           className="text-netural   text-xs md:text-sm font-normal mb-1 ">
-            Secure your overseas education with a solid financial plan. Explore funding options, including scholarships, grants, loans, and part-time work. Create a budget to manage expenses effectively and avoid financial stress. Let us help you navigate the financial landscape and make your dream of studying abroad a reality.
+            Our team is dedicated to guiding you through the visa application process. We offer comprehensive support, including expert assistance with visa documentation and intensive interview preparation. Our goal is to ensure a seamless and stress-free experience, helping you navigate every step of the journey with confidence.
           </p>
         <div className="grid grid-cols-2 gap-4">
         <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/fp2.png?alt=media&token=29436ab9-7509-4d00-88b9-5439af789147"
+            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/VISA-2.png?alt=media&token=d28a114a-8cca-4121-b862-f5d09ced7171"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4" />
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/fp1.png?alt=media&token=29436ab9-7509-4d00-88b9-5439af789147"
+            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/VISA.png?alt=media&token=9c8d15c1-aef1-42de-9f07-89ee324d5721"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4 " />
           
         </div>
-        <Chips items={Finance} />
+        <Chips items={va} />
       </div>
       ),
     },
     {
-      title: "SOP Review",
+      title: "Education Loans & Accommodation",
       content: (
         <div>
-          <p
-            className="text-netural  text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+        <h1 className="mb-4 font-bold">Tailored Loan Solutions, Reliable Accommodation</h1>
+        <p
+          className="text-netural   text-xs md:text-sm font-normal mb-1 ">
+            We connect students with trusted lenders for the best education loans and accommodations. Our team provides personalized guidance to help students secure the necessary resources for their academic journey.
           </p>
-          <div className="mb-8">
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Card grid component
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Startup template Aceternity
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Random file upload lol
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            {/* <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]" />
-            <img
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]" />
-            <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]" /> */}
-            <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]" />
-          </div>
+        <div className="grid grid-cols-2 gap-4">
+        <img
+            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/LOAN.png?alt=media&token=bf04b48e-3aec-4dc2-bf0d-7c9b62004e7d"
+            alt="startup template"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/hotel.png?alt=media&token=e9c1adde-26db-459f-bd6b-559f47022658"
+            alt="startup template"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4 " />
+          
         </div>
+        <Chips items={ela} />
+      </div>
       ),
     },
     {
-      title: "VISA Help",
+      title: "Scholarships & Forex Services",
       content: (
         <div>
-          <p
-            className="text-netural  text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+        <h1 className="mb-4 font-bold">Scholarships & Forex: Your Gateway to Success.</h1>
+        <p
+          className="text-netural   text-xs md:text-sm font-normal mb-1 ">
+           Explore scholarship options and access efficient foreign exchange services for easy financial planning.
           </p>
-          <div className="mb-8">
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Card grid component
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Startup template Aceternity
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Random file upload lol
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]" />
-            {/* <img
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]" />
-            <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]" />
-            <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]" /> */}
-          </div>
+        <div className="grid grid-cols-2 gap-4">
+        <img
+            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/scholarship.avif?alt=media&token=bc1b4da5-af80-4ad1-9802-676cd4f3d88e"
+            alt="startup template"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/9319770_4136942.jpg?alt=media&token=0abeb164-90ba-40e4-94d9-1e5377b99586"
+            alt="startup template"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4 " />
+          
         </div>
+        <Chips items={sfs} />
+      </div>
       ),
     },
-    {
-      title: "Get a Coach",
-      content: (
-        <div>
-          <p
-            className="text-netural  text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
-          </p>
-          <div className="mb-8">
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Card grid component
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Startup template Aceternity
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Random file upload lol
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
-            </div>
-            <div
-              className="flex gap-2 items-center text-neutral-700  text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            {/* <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]" />
-            <img
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]" /> */}
-            <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]" />
-            <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]" />
-          </div>
-        </div>
-      ),
-    },
+    
   ];
   return (
     (<div className="w-full">

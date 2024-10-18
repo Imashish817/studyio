@@ -9,7 +9,8 @@ import {
 } from "../ui/animated-modal";
 import { motion } from "framer-motion";
 
-export function AnimatedModalDemo({name}) {
+export function AnimatedModalDemo({name, Error}) {
+ 
   const images = [
     "https://images.unsplash.com/photo-1517322048670-4fba75cbbb62?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1573790387438-4da905039392?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -28,7 +29,8 @@ export function AnimatedModalDemo({name}) {
             ✈️
           </div>
         </ModalTrigger>
-        <ModalBody>
+        {console.log(Error)}
+       {Error ==="" &&<ModalBody>
           <ModalContent>
             <h4 className="text-lg md:text-2xl text-neutral-600  font-bold text-center mb-8">
               Hi{" "}
@@ -69,7 +71,7 @@ export function AnimatedModalDemo({name}) {
             
           </ModalContent>
           
-        </ModalBody>
+        </ModalBody>}
       </Modal>
     </div>
   );

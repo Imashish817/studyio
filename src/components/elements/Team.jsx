@@ -32,12 +32,9 @@ export function ExpandableCardDemo() {
  <div
         className="h-[10rem] rounded-md flex flex-col antialiased bg-white  items-center justify-center relative overflow-hidden mt-[10%]">
         <div className="max-w-2xl mx-auto  px-4 md:px-8 lg:px-10 ">
-          <p
-            className="text-neutral-700  text-sm md:text-base max-w-sm font-semibold text-left">
-            Our Team
-          </p>
-          <p className="text-lg text-purple-900 md:text-4xl mb-4  max-w-4xl font-semibold">
-          Passionate People, <span className="text-orange-500 drop-shadow-xl"> Powerful Results</span>
+          
+          <p className="text-3xl text-purple-900 md:text-4xl mb-4  max-w-4xl font-semibold">
+          Our<span className="text-orange-500 text-3xl drop-shadow-xl md:text-4xl mb-4  max-w-4xl font-semibold"> Passinate Team</span>
           </p>
 
         </div>
@@ -219,7 +216,7 @@ const cards = [
   {
     description: "Director",
     title: "Sanjay Batra",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/SanjayBatra.jpg?alt=media&token=7080f643-4348-4887-9f14-e80c2bfe6918",
+    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Sanjay.png?alt=media&token=57b6b444-66c5-4534-801a-05c6d40756b3",
     ctaText: "Visit",
     ctaLink: "",
     content: () => {

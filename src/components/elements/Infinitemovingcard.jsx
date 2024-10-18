@@ -9,12 +9,9 @@ export function InfiniteMovingCardsDemo() {
     <div
       className="h-[40rem] rounded-md flex flex-col antialiased bg-white  items-center justify-center relative overflow-hidden">
       <div className="max-w-7xl mx-auto  px-4 md:px-8 lg:px-10 ">
-      <p
-          className="text-neutral-700  text-sm md:text-base max-w-sm font-semibold text-left">
-         Testimonials
-        </p>
-        <p className="text-lg text-purple-900 md:text-4xl mb-4  max-w-4xl font-semibold">
-        From Dreamers <span className="text-orange-500 drop-shadow-xl">to Achievers</span>
+      
+        <p className="text-3xl text-purple-900 md:text-4xl mb-4  max-w-4xl font-semibold">
+        Here From <span className="text-3xl text-orange-500 drop-shadow-xl md:text-4xl mb-4  max-w-4xl font-semibold">Our Students</span>
         </p>
        
       </div>      

@@ -9,21 +9,24 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
-    // colors: {
-    //   'purple': '#62287d',
-    //   'orange': '#ef7f1a',
-    //   'white': '#FFFFFF',
-    //   'slate': '#f1f5f9',
-    //   'emerald':'#32c18d',
-    //   'em':  'rgb(14 165 233 / 0.08)',
-    //   'cyan': '#06b6d4',
-    //   'cyan2': '#0891b2',
-    //   'cyan3': '#67e8f9',
-    //   'cyan4':'#0ea5e9',
-    //   'black': 'rgb(0 0 0)',
-    // 'netural':"#262626"
-    // },
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
+    extend: {
+      colors: {},
+      keyframes: {
+        "infinite-scroll": {
+          "0%": { transform: "translateX(-100)" },
+          "100%": { transform: "translateX(calc(-100% - 10px))" },
+        }
+      },
+      animation: {
+        "infinite-scroll": "infinite-scroll 5s linear infinite",
+      },
+    },
   },
-  plugins: [],
 };

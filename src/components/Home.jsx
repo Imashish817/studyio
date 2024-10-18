@@ -15,9 +15,17 @@ const Home = () => {
   return (
     <>
       <HeroSection />
-      <InfiniteMovingCardsDemo />
-      <TimelineDemo />
       <WobbleCardDemo/>
+      <InfiniteMovingCardsDemo />
+      <div className="text-center flex justify-center md:-mb-32">
+      
+        <p className="text-3xl text-purple-900 md:text-4xl mb-4  max-w-4xl font-semibold">
+        Our <span className="text-orange-500 text-3xl drop-shadow-xl md:text-4xl mb-4  max-w-4xl font-semibold"> Services</span>
+        </p>
+       
+      </div> 
+      <TimelineDemo />
+      
       <ExpandableCardDemo />
       <GlobeDemo />
       <ModalFooter/>

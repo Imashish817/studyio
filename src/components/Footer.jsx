@@ -16,7 +16,7 @@ const Footer = () => {
                             Have any query? contact us we are here for you.</p>
 
                         <div class="flex  space-x-4 sm:justify-center  ">
-                            <a href="https://www.facebook.com/studyculture.co?mibextid=LQQJ4d"
+                            <a  target="_blank" href="https://www.facebook.com/studyculture.co?mibextid=LQQJ4d"
                                 class="w-9 h-9 rounded-full bg-white flex justify-center items-center hover:shadow-md">
                                 <svg class="w-[1.25rem] h-[1.125rem]" viewBox="0 0 15 15" fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ const Footer = () => {
 
 
                             </a>
-                            <a href="https://www.instagram.com/studyculture.io?igsh=MWZrd3oxMWE1bG52dA=="
+                            <a  target="_blank" href="https://www.instagram.com/studyculture.io?igsh=MWZrd3oxMWE1bG52dA=="
                                 class="w-9 h-9 rounded-full bg-white flex justify-center items-center hover:shadow-md">
                                 <svg class="w-[1.25rem] h-[1.125rem]" viewBox="0 0 15 15" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@ const Footer = () => {
                                 </svg>
 
                             </a>
-                            <a href="https://www.linkedin.com/company/study-culture/"
+                            <a  target="_blank" href="https://www.linkedin.com/company/study-culture/"
                                 class="w-9 h-9 rounded-full bg-white flex justify-center items-center hover:shadow-md">
 
                                 <svg class="w-[1rem] h-[1rem]" viewBox="0 0 13 12" fill="none"
@@ -71,7 +71,7 @@ const Footer = () => {
                                 </svg>
 
                             </a>
-                            <a href="https://www.youtube.com/channel/UC0fxYCYE7GYLE_AJkg6cOUA"
+                            <a  target="_blank" href="https://www.youtube.com/channel/UC0fxYCYE7GYLE_AJkg6cOUA"
                                 class="w-9 h-9 rounded-full bg-white flex justify-center items-center hover:shadow-md">
 
                                 <svg class="w-[1.25rem] h-[0.875rem]" viewBox="0 0 16 12" fill="none"
@@ -95,7 +95,7 @@ const Footer = () => {
                     <div class="block text-center xl:text-left xl:py-16 col-span-full min-[500px]:col-span-6 md:col-span-4 xl:col-span-3 xl:pl-5">
                         <h4 class="text-lg text-gray-900 font-bold mb-9">Get In Touch</h4>
                         <ul class="text-gray-900 transition-all duration-500 grid gap-2">
-                            <li>info@study.io</li>
+                            <li>info@studyculture.io</li>
                             <li>+91 999 233 0440</li>
                             <li>+91 999 266 8044</li>
                             <li>51 S, Model Town, Hisar, Haryana, India.</li>

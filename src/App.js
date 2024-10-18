@@ -9,24 +9,32 @@ import WhatsApp from "./components/elements/whatsapp.jsx";
 import ContactUs from "./components/ContactUs.jsx";
 import Footer from "./components/Footer.jsx";
 import Services from "./components/Services.jsx";
-
+import Marquee from "react-fast-marquee";
 function App() {
   return (<>
     <div className="min-h-screen text-black ">
-      <div className="h-8 bg-purple-900 w-full rounded-t-xl mb-5">
-        <h3 className="text-white text-center p-1">Some Great offers and seminar details....🎁</h3>
-      </div>
+      <Marquee className="h-10 bg-purple-900 w-full rounded-t-xl mb-5 flex justify-evenly align-middle">
+        <div className="mx-28 flex ">
+          <h3 className="text-white text-center text-nowrap my-2 mx-1 px-1 ">Book your <span className="font-bold">FREE</span> Conslutant Now!!!</h3>
+          <button className="text-sm rounded-xl  text-nowrap border  border-white text-white bg-orange-500 my-2 mx-1 px-1">Book Now</button>
+        </div>
+        <div  className="mx-28 flex ">
+        <h3 className="text-white text-center text-nowrap my-2 mx-1 px-1 ">Book your Door Step Conslutant Now!!!</h3>
+        <button className="text-sm rounded-xl  text-nowrap border  border-white text-white bg-orange-500 my-2 mx-1 px-1">Book Now</button>
+        </div>
+
+      </Marquee>
       <div className="flex justify-center lg:grid lg:grid-cols-2 ">
         <div><img src={logo} className="h-16 mt-[30%] lg:mt-[1%] lg:ml-24"></img></div>
         <div className="self-end"> <FloatingNavDemo /></div>
       </div>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/contact" element={<ContactUs />} />
-      <Route path="/Services" element={<Services />} />
-    </Routes>
-    <WhatsApp/>
-    <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/Services" element={<Services />} />
+      </Routes>
+      <WhatsApp />
+      <Footer />
     </div>
   </>
   );
