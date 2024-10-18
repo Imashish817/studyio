@@ -5,7 +5,8 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    (<div
+    (
+    <div
       className="h-[40rem] rounded-md flex flex-col antialiased bg-white  items-center justify-center relative overflow-hidden">
       <div className="max-w-7xl mx-auto  px-4 md:px-8 lg:px-10 ">
       <p

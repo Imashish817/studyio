@@ -3,6 +3,7 @@ import home from "../data/img/home.jpg"
 import { FlipWordsDemo } from './Flipwords'
 import { TextGenerateEffectDemo } from './Textgenerate'
 import { BorderButton } from './GlowButton'
+import Btn from './Btn'
 const HeroSection = () => {
   return (
     <div>
@@ -11,11 +12,9 @@ const HeroSection = () => {
         <div class="flex flex-1 flex-col items-center lg:items-start lg:mt-[10%] lg:ml-20 ">
         <FlipWordsDemo />
         <TextGenerateEffectDemo />
-          <div class="flex justify-center flex-wrap gap-2 md:gap-5">
-         
-            <BorderButton name={"Start Your New Journey"} />
-            <BorderButton name={"Get Your personalised Plan for FREE "} />
-         
+          <div class="flex justify-center flex-wrap gap-5 md:gap-10 lg:ml-5 ">
+            <Btn text={"Start Your New Journey"}/>
+            <Btn text={"Get Your personalised Plan for FREE "} />
           </div>
           <div className="flex justify-start my-5 mt-[10%]">
             <div>

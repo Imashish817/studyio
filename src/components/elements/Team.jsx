@@ -29,11 +29,19 @@ export function ExpandableCardDemo() {
   useOutsideClick(ref, () => setActive(null));
 
   return (<>
-  <div className="max-w-5xl mx-auto px-8">
-      <p className="text-center font-bold text-2xl text-black m-4">
-      Meet Our Team
-      </p>    
-    </div>
+ <div
+        className="h-[10rem] rounded-md flex flex-col antialiased bg-white  items-center justify-center relative overflow-hidden mt-[10%]">
+        <div className="max-w-2xl mx-auto  px-4 md:px-8 lg:px-10 ">
+          <p
+            className="text-neutral-700  text-sm md:text-base max-w-sm font-semibold text-left">
+            Our Team
+          </p>
+          <p className="text-lg text-purple-900 md:text-4xl mb-4  max-w-4xl font-semibold">
+          Passionate People, <span className="text-orange-500 drop-shadow-xl"> Powerful Results</span>
+          </p>
+
+        </div>
+      </div>
     <AnimatePresence>
       {active && typeof active === "object" && (
         <motion.div
@@ -222,14 +230,14 @@ const cards = [
     },
   },
   {
-    description: "Head - Career Counselling",
+    description: "Director - Career Counselling",
     title: "Dr. Monika Bargujjar",
     src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Monika.JPG?alt=media&",
     ctaText: "Visit",
     ctaLink: "",
     content: () => {
       return (
-        (<p>Dr. Monika Bargujjar is the Head of Career Counselling at Study Culture, bringing extensive
+        (<p>Dr. Monika Bargujjar is the Director of Career Counselling at Study Culture, bringing extensive
             knowledge and expertise in psychology to help students navigate their career paths. With a PhD
             in Applied Psychology, she has a strong foundation in understanding human behavior,
             complemented by her experience teaching graduate and postgraduate students.
@@ -239,14 +247,14 @@ const cards = [
   },
 
   {
-    description: "Head - Services & Marketing",
+    description: "Director - Services & Marketing",
     title: "Ashima Vij",
     src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Ashima%20Vij.jpg?alt=media",
     ctaText: "Visit",
     ctaLink: "",
     content: () => {
       return (
-        (<p>Ashima Vij is the Head of Services & Marketing at Study Culture, bringing over 10 years of
+        (<p>Ashima Vij is the Director of Services & Marketing at Study Culture, bringing over 10 years of
             diverse experience across various industries, including more than 4 years in the education
             sector. She holds a Master’s degree in Commerce, which equips her with strong analytical and
             strategic skills essential for navigating the complexities of service delivery and marketing in a
@@ -256,19 +264,35 @@ const cards = [
     },
   },
   {
-    description: "Head - ELT and Operations",
+    description: "Director - ELT and Operations",
     title: "Priya Kumra",
     src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Priya-2.jpg?alt=media",
     ctaText: "Visit",
     ctaLink: "",
     content: () => {
       return (
-        (<p>Priya Kumra serves as the Head of English Language Training (ELT) and Operations at Study
+        (<p>Priya Kumra serves as the Director of English Language Training (ELT) and Operations at Study
         Culture, bringing a wealth of experience and expertise as an IELTS trainer. With an MBA in
         Finance and Marketing and a BA in Economics (Honours), Priya combines her strong academic
         foundation with a genuine passion for empowering students to achieve their language
         proficiency goals.
                   </p>)
+      );
+    },
+  },
+  {
+    description: "Contact us on our social media ",
+    title: "Want to Join Us",
+    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/join-us-speech-bubble-with-join-us-text-3d.png?alt=media&token=6af7666d-dc88-4596-b5e6-fc27182816db",
+    ctaText: "Contact",
+    ctaLink: "",
+    content: () => {
+      return (
+        (<><p>Want to be part of our amazing community?</p>
+          <p>Connect with us on social media and let's create something extraordinary together.</p>
+          <p>Join the conversation, share your thoughts, and be inspired.</p>
+         <p> Follow us now for exclusive updates, behind-the-scenes glimpses, and more.</p>
+         </>)
       );
     },
   },
