@@ -8,6 +8,7 @@ import "./App.css";
 import WhatsApp from "./components/elements/whatsapp.jsx";
 import ContactUs from "./components/ContactUs.jsx";
 import Footer from "./components/Footer.jsx";
+import Services from "./components/Services.jsx";
 
 function App() {
   return (<>
@@ -22,6 +23,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<ContactUs />} />
+      <Route path="/Services" element={<Services />} />
     </Routes>
     <WhatsApp/>
     <Footer/>

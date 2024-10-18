@@ -283,7 +283,7 @@ const cards = [
   {
     description: "Contact us on our social media ",
     title: "Want to Join Us",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/join-us-speech-bubble-with-join-us-text-3d.png?alt=media&token=6af7666d-dc88-4596-b5e6-fc27182816db",
+    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/join-us.png?alt=media&token=1faa8069-1adc-42f6-a310-9bcea8adc861",
     ctaText: "Contact",
     ctaLink: "",
     content: () => {

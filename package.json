@@ -16,7 +16,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.11.8",
+    "framer-motion": "^11.11.9",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-floating-whatsapp": "^5.0.8",
@@ -36,7 +36,7 @@
   },
   "overrides": {
     "typescript": "$typescript"
-},
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "aws-cdk": "^2.162.1",
