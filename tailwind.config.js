@@ -22,10 +22,19 @@ module.exports = {
         "infinite-scroll": {
           "0%": { transform: "translateX(-100)" },
           "100%": { transform: "translateX(calc(-100% - 10px))" },
+        },
+        shimmer: {
+          from: {
+            "backgroundPosition": "0 0"
+          },
+          to: {
+            "backgroundPosition": "-200% 0"
+          }
         }
       },
       animation: {
         "infinite-scroll": "infinite-scroll 5s linear infinite",
+        shimmer: "shimmer 2s linear infinite"
       },
     },
   },

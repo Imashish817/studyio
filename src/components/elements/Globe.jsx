@@ -410,11 +410,11 @@ export function GlobeDemo() {
           className="div">
           <h2
             className="text-center text-xl md:text-4xl font-bold text-black ">
-           A Platform That Supports You End-to-End
+          Your Gateway to the World’s Best Universities
           </h2>
           <p
             className="text-center text-base md:text-sm font-normal text-neutral-700  max-w-md mt-2 mx-auto">
-            From IELTS/PTE coaching to  Visa Process, we give personalized support throughout your Study Abroad Journey.
+            From selecting the right university to handling visa formalities, we are dedicated to guiding you through every step of your international education journey.
           </p>
         </motion.div>
         <div

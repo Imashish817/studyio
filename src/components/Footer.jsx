@@ -1,6 +1,7 @@
 
 import React from 'react'
 import logo from "../components/data/img/logo.png"
+import { IconMailFilled, IconMapPinFilled, IconPhone } from '@tabler/icons-react'
 const Footer = () => {
     return (
         <footer class="w-full">
@@ -91,14 +92,14 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-
+                    
                     <div class="block text-center xl:text-left xl:py-16 col-span-full min-[500px]:col-span-6 md:col-span-4 xl:col-span-3 xl:pl-5">
                         <h4 class="text-lg text-gray-900 font-bold mb-9">Get In Touch</h4>
                         <ul class="text-gray-900 transition-all duration-500 grid gap-2">
-                            <li>info@studyculture.io</li>
-                            <li>+91 999 233 0440</li>
-                            <li>+91 999 266 8044</li>
-                            <li>51 S, Model Town, Hisar, Haryana, India.</li>
+                            <li className='flex '><IconMailFilled className='mr-2'/>info@studyculture.io</li>
+                            <li className='flex '><IconPhone className='mr-2'/>+91 999 233 0440</li>
+                            <li className='flex '><IconPhone className='mr-2'/>+91 999 266 8044</li>
+                            <li className='flex '><IconMapPinFilled className='mr-2'/>Head Office: 51 S, Model Town, Hisar, Haryana, India.</li>
                         </ul>
                     </div>
                     <div class="block xl:py-16 col-span-full min-[500px]:col-span-6 md:col-span-4 xl:col-span-3">
@@ -132,14 +133,19 @@ const Footer = () => {
                             </button>
                         </div>
                     </div>
-
+                    
                 </div>
             </div>
             <div class="py-4 bg-indigo-50">
                 <div class="flex items-center justify-center">
-                    <span class="text-sm text-gray-800 ">Copyright@2024 All Right Reserved  by <a href="">studyculture.io</a></span>
+                    <h3 class="text-lg font-semibold text-gray-800 ">TEAMS AVAILABLE IN HISAR | KARNAL | NOIDA | MORADABAD</h3>
                 </div>
             </div>
+            {/* <div class="py-4 bg-indigo-50">
+                <div class="flex items-center justify-center">
+                    <span class="text-sm text-gray-800 ">Copyright@2024 All Right Reserved  by <a href="">studyculture.io</a></span>
+                </div>
+            </div> */}
 
         </footer>
     )

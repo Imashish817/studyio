@@ -34,7 +34,7 @@ export function ExpandableCardDemo() {
         <div className="max-w-2xl mx-auto  px-4 md:px-8 lg:px-10 ">
           
           <p className="text-3xl text-purple-900 md:text-4xl mb-4  max-w-4xl font-semibold">
-          Our<span className="text-orange-500 text-3xl drop-shadow-xl md:text-4xl mb-4  max-w-4xl font-semibold"> Passinate Team</span>
+          Our<span className="text-orange-500 text-3xl drop-shadow-xl md:text-4xl mb-4  max-w-4xl font-semibold"> Passionate</span>
           </p>
 
         </div>
@@ -127,39 +127,39 @@ export function ExpandableCardDemo() {
         </div>
       ) : null}
     </AnimatePresence>
-    <ul
-      className="max-w-4xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 justify-center gap-4">
-      {cards.map((card, index) => (
-        <motion.div
-          layoutId={`card-${card.title}-${id}`}
-          key={card.title}
-          onClick={() => setActive(card)}
-          className="p-4 flex flex-col  hover:bg-neutral-50  rounded-xl cursor-pointer w-full">
-          <div className="flex gap-4 flex-col  w-full">
-            <motion.div layoutId={`img-${card.title}-${id}`}>
-              <img
-                width={100}
-                height={100}
-                src={card.src}
-                alt={card.title}
-                className="h-60 w-full  rounded-lg object-cover object-top" />
-            </motion.div>
-            <div className="flex justify-center items-center flex-col">
-              <motion.h3
-                layoutId={`title-${card.title}-${id}`}
-                className="font-medium text-neutral-800  text-center md:text-left text-base">
-                {card.title}
-              </motion.h3>
-              <motion.p
-                layoutId={`description-${card.description}-${id}`}
-                className="text-neutral-600 text-center md:text-left text-base">
-                {card.description}
-              </motion.p>
-            </div>
-          </div>
-        </motion.div>
-      ))}
-    </ul>
+    <div className="max-w-5xl mx-auto w-full flex flex-wrap justify-center ">
+  {cards.map((card, index) => (
+    <motion.div
+      key={card.title}
+      onClick={() => setActive(card)}
+      className="p-4 flex flex-col hover:bg-neutral-50 rounded-xl cursor-pointer w-full md:basis-1/3" // Adjust basis for desired columns
+    >
+      <motion.div layoutId={`img-${card.title}-${id}`}>
+        <img
+          width={100}
+          height={100}
+          src={card.src}
+          alt={card.title}
+          className="h-60 w-full rounded-lg object-cover object-top"
+        />
+      </motion.div>
+      <div className="flex flex-col justify-center items-center">
+        <motion.h3
+          layoutId={`title-${card.title}-${id}`}
+          className="font-medium text-neutral-800 text-center md:text-left text-base"
+        >
+          {card.title}
+        </motion.h3>
+        <motion.p
+          layoutId={`description-${card.description}-${id}`}
+          className="text-neutral-600 text-center md:text-left text-base"
+        >
+          {card.description}
+        </motion.p>
+      </div>
+    </motion.div>
+  ))}
+</div>
   </>);
 }
 
@@ -277,20 +277,5 @@ const cards = [
       );
     },
   },
-  {
-    description: "Contact us on our social media ",
-    title: "Want to Join Us",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/join-us.png?alt=media&token=1faa8069-1adc-42f6-a310-9bcea8adc861",
-    ctaText: "Contact",
-    ctaLink: "",
-    content: () => {
-      return (
-        (<><p>Want to be part of our amazing community?</p>
-          <p>Connect with us on social media and let's create something extraordinary together.</p>
-          <p>Join the conversation, share your thoughts, and be inspired.</p>
-         <p> Follow us now for exclusive updates, behind-the-scenes glimpses, and more.</p>
-         </>)
-      );
-    },
-  },
+  
 ];
