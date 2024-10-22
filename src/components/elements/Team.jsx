@@ -34,7 +34,7 @@ export function ExpandableCardDemo() {
         <div className="max-w-2xl mx-auto  px-4 md:px-8 lg:px-10 ">
           
           <p className="text-3xl text-purple-900 md:text-4xl mb-4  max-w-4xl font-semibold">
-          Our<span className="text-orange-500 text-3xl drop-shadow-xl md:text-4xl mb-4  max-w-4xl font-semibold"> Passionate</span>
+          Our<span className="text-orange-500 text-3xl drop-shadow-xl md:text-4xl mb-4  max-w-4xl font-semibold"> Passionate Team</span>
           </p>
 
         </div>
@@ -197,11 +197,24 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "CEO",
-    title: "Chirag Mehta",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Chirag.webp?alt=media",
+    description: " Sr. Director",
+    title: "Sanjay Batra",
+    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/teams%2FSanjay.png?alt=media&token=052e31ec-1307-4fdd-b788-e6a64cb5cf06",
     ctaText: "Visit",
     ctaLink: "",
+    content: () => {
+      return (
+        (<p>Mr. Sanjay Batra is an accomplished entrepreneur with over 30 years of experience spanning various industries, including retail, technology, real estate, and consultancy. His diverse business portfolio reflects his exceptional abilities in strategic planning, financial management, and operational leadership. Known for his visionary approach, Mr. Batra has successfully founded and led numerous ventures, transforming them into thriving enterprises
+                  </p>)
+      );
+    },
+  },
+  {
+    description: "CEO",
+    title: "Chirag Mehta",
+    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/teams%2FChirag.jpg?alt=media&token=e9a13339-1c4a-4805-b9b4-21ff6bec6f5f",
+    ctaText: "Visit",
+    ctaLink: "https://www.linkedin.com/in/chirag-mehta-92172a54",
     content: () => {
       return (
         (<p>Chirag Mehta is an enthusiastic and highly organized leader with over 11 years of experience in
@@ -213,25 +226,13 @@ const cards = [
       );
     },
   },
-  {
-    description: "Director",
-    title: "Sanjay Batra",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Sanjay.png?alt=media&token=57b6b444-66c5-4534-801a-05c6d40756b3",
-    ctaText: "Visit",
-    ctaLink: "",
-    content: () => {
-      return (
-        (<p>Mr. Sanjay Batra is an accomplished entrepreneur with over 30 years of experience spanning various industries, including retail, technology, real estate, and consultancy. His diverse business portfolio reflects his exceptional abilities in strategic planning, financial management, and operational leadership. Known for his visionary approach, Mr. Batra has successfully founded and led numerous ventures, transforming them into thriving enterprises
-                  </p>)
-      );
-    },
-  },
+ 
   {
     description: "Director - Career Counselling",
     title: "Dr. Monika Bargujjar",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Monika.JPG?alt=media&",
+    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/teams%2FMonika.JPG?alt=media&token=e17d318f-47f9-4b20-a663-ca3ffb4bc623",
     ctaText: "Visit",
-    ctaLink: "",
+    ctaLink: "https://www.linkedin.com/in/dr-monika-bargujjar-743348175",
     content: () => {
       return (
         (<p>Dr. Monika Bargujjar is the Director of Career Counselling at Study Culture, bringing extensive
@@ -248,7 +249,7 @@ const cards = [
     title: "Ashima Vij",
     src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Ashima%20Vij.jpg?alt=media",
     ctaText: "Visit",
-    ctaLink: "",
+    ctaLink: "https://www.linkedin.com/in/ashima-vij-60111196",
     content: () => {
       return (
         (<p>Ashima Vij is the Director of Services & Marketing at Study Culture, bringing over 10 years of
@@ -265,7 +266,7 @@ const cards = [
     title: "Priya Kumra",
     src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Priya-2.jpg?alt=media",
     ctaText: "Visit",
-    ctaLink: "",
+    ctaLink: "https://www.linkedin.com/in/priya-kumra-mba-485914324",
     content: () => {
       return (
         (<p>Priya Kumra serves as the Director of English Language Training (ELT) and Operations at Study

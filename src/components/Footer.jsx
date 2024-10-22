@@ -1,8 +1,39 @@
 
-import React from 'react'
+import React, { useRef } from 'react'
 import logo from "../components/data/img/logo.png"
-import { IconMailFilled, IconMapPinFilled, IconPhone } from '@tabler/icons-react'
+import { IconBrandWhatsapp, IconMailFilled, IconMapPinFilled, IconPhone } from '@tabler/icons-react'
+import { Bounce, toast } from 'react-toastify'
 const Footer = () => {
+    const email = useRef("")
+    const TostErrorPayload = {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      };
+    const handlesubs=()=>{
+        if (!(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.current.value))) {
+            toast.error('Oops! Email is Invalid', TostErrorPayload);
+          }
+          else{
+            toast.success('😉 Hey ' + email.current.value + ', You have successfully subscribed to our Updates', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+              });
+          }
+    }
     return (
         <footer class="w-full">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -13,7 +44,7 @@ const Footer = () => {
                         <a href="https://pagedone.io/" class="flex justify-center lg:justify-start">
                             <img src={logo} />
                         </a>
-                        <p class="text-center text-gray-600">Trusted in more than 20+ countries & 1,00,000 students.<br/>
+                        <p class="text-center text-gray-600">Experienced team in 20+ countries and supporting 1,00,000+ students.<br/><br></br>
                             Have any query? contact us we are here for you.</p>
 
                         <div class="flex  space-x-4 sm:justify-center  ">
@@ -54,7 +85,7 @@ const Footer = () => {
                                 </svg>
 
                             </a>
-                            <a  target="_blank" href="https://www.linkedin.com/company/study-culture/"
+                            <a  target="_blank" href="https://www.linkedin.com/company/studycultureio/"
                                 class="w-9 h-9 rounded-full bg-white flex justify-center items-center hover:shadow-md">
 
                                 <svg class="w-[1rem] h-[1rem]" viewBox="0 0 13 12" fill="none"
@@ -95,10 +126,10 @@ const Footer = () => {
                     
                     <div class="block text-center xl:text-left xl:py-16 col-span-full min-[500px]:col-span-6 md:col-span-4 xl:col-span-3 xl:pl-5">
                         <h4 class="text-lg text-gray-900 font-bold mb-9">Get In Touch</h4>
-                        <ul class="text-gray-900 transition-all duration-500 grid gap-2">
+                        <ul class="text-gray-900 transition-all duration-500 grid gap-4">
                             <li className='flex '><IconMailFilled className='mr-2'/>info@studyculture.io</li>
                             <li className='flex '><IconPhone className='mr-2'/>+91 999 233 0440</li>
-                            <li className='flex '><IconPhone className='mr-2'/>+91 999 266 8044</li>
+                            <li className='flex '><IconBrandWhatsapp className='mr-2'/>+91 999 266 8044</li>
                             <li className='flex '><IconMapPinFilled className='mr-2'/>Head Office: 51 S, Model Town, Hisar, Haryana, India.</li>
                         </ul>
                     </div>
@@ -107,22 +138,23 @@ const Footer = () => {
                         <div class="flex gap-6 xl:gap-12 max-xl:justify-center">
                             <ul class="text-gray-600 transition-all duration-500 grid gap-6">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/about">About </a></li>
+                                <li><a href="/services">Services</a></li>
+                                
                             </ul>
                             <ul class="text-gray-600 transition-all duration-500 grid gap-6">
-                                
+                                <li><a href="/about">About </a></li>
                                 <li><a href="/contact">Contact</a></li>
-                                <li><a href="/services">Services</a></li>
+                                
                             </ul>
                         </div>
                     </div>
                     <div class="block xl:py-16 col-span-full md:col-span-4 xl:col-span-3">
-                        <h4 class="text-lg text-gray-900 font-bold mb-9 text-center xl:text-left">Newsletter</h4>
+                        <h4 class="text-lg text-gray-900 font-bold mb-9 text-center xl:text-left">Updates</h4>
                         <div class="grid gap-7 ">
-                            <input type="text" name="email"
+                            <input type="email" name="email" ref={email}
                                 class="py-2 px-4 border border-gray-300 shadow-sm h-14 text-lg text-gray-800 rounded-full w-full  xl:w-64 placeholder:text-gray-400 focus:outline-none"
                                 placeholder="Enter email.." />
-                            <button type="submit"
+                            <button type="submit" onClick={handlesubs}
                                 class="flex gap-2 justify-center items-center py-3.5 px-7 rounded-full text-white bg-gradient-to-tr from-orange-500 to-purple-900 shadow-md w-fit transition-all duration-500 mx-auto xl:mx-0 hover:bg-purple-900">Subscribe<svg
                                     width="17" height="13" viewBox="0 0 17 13" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -136,16 +168,13 @@ const Footer = () => {
                     
                 </div>
             </div>
-            <div class="py-4 bg-indigo-50">
+            <div class="py-2 bg-indigo-50">
                 <div class="flex items-center justify-center">
-                    <h3 class="text-lg font-semibold text-gray-800 ">TEAMS AVAILABLE IN HISAR | KARNAL | NOIDA | MORADABAD</h3>
+                    <h3 class="text-sm font-semibold text-gray-800 ">TEAMS&nbsp;&nbsp; AVAILABLE &nbsp;&nbsp;IN &nbsp;&nbsp;-&nbsp;&nbsp; HISAR &nbsp;&nbsp;|&nbsp;&nbsp; KARNAL &nbsp;&nbsp;|&nbsp;&nbsp; NOIDA &nbsp;&nbsp;|&nbsp;&nbsp; MORADABAD</h3>
                 </div>
             </div>
-            {/* <div class="py-4 bg-indigo-50">
-                <div class="flex items-center justify-center">
-                    <span class="text-sm text-gray-800 ">Copyright@2024 All Right Reserved  by <a href="">studyculture.io</a></span>
-                </div>
-            </div> */}
+            
+            
 
         </footer>
     )

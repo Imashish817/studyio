@@ -9,7 +9,14 @@ export function FloatingNavDemo() {
       name: "Home",
       link: "/",
       icon: <IconHome className="h-5 w-5 text-neutral-500 " />,
-    },{
+    },
+    
+    {
+      name: "About",
+      link: "/about",
+      icon: <IconUser className="h-5 w-5 text-neutral-500 " />,
+    },
+    {
       name: "Services",
       link: "/Services",
       icon: (
@@ -17,12 +24,7 @@ export function FloatingNavDemo() {
       ),
     },
     {
-      name: "About",
-      link: "/about",
-      icon: <IconUser className="h-5 w-5 text-neutral-500 " />,
-    },
-    {
-      name: "Contact Us",
+      name: "Contact",
       link: "/contact",
       icon: (
         <IconMessage className="h-5 w-5 text-neutral-500 " />

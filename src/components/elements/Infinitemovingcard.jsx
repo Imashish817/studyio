@@ -15,7 +15,7 @@ export function InfiniteMovingCardsDemo() {
         </p>
        
       </div>      
-      <InfiniteMovingCards items={testimonials} direction="right" speed="fast" />
+      <InfiniteMovingCards items={testimonials} direction="right" speed="normal" />
     </div>)
   );
 }
@@ -26,29 +26,41 @@ const testimonials = [
       "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
     name: "Charles Dickens",
     title: "A Tale of Two Cities",
+    img:"https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/testimonials%2FRohit.webp?alt=media&token=e223db0d-a32b-43bb-b82e-dd54a3cde5e4"
 
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+    name: "Charles Dickens",
+    title: "A Tale of Two Cities",
+    img:"https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/testimonials%2FDolli.webp?alt=media&token=dfa598ad-5dfc-49fa-ac20-22941d41caba"
+
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+    name: "Charles Dickens",
+    title: "A Tale of Two Cities",
+    img:"https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/testimonials%2FNamita.webp?alt=media&token=a5820628-5e6c-49a0-9164-98d916ba9d06"
+
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+    name: "Charles Dickens",
+    title: "A Tale of Two Cities",
+    img:"https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/testimonials%2FPrateek.webp?alt=media&token=a4df8e3a-1637-470c-a577-74123878818d"
+
   },
+  {
+    quote:
+      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+    name: "Charles Dickens",
+    title: "A Tale of Two Cities",
+    img:"https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/testimonials%2FSam.webp?alt=media&token=157cbc0b-e4b2-4fd6-897e-425245a448a7"
+
+  },
+
+ 
 ];

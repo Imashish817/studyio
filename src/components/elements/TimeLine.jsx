@@ -7,7 +7,7 @@ import Btn from "./Btn.jsx";
 
 export function TimelineDemo() {
   const pcc = ["Comprehensive Assessment", "Career Path Mapping", "Goal Setting and Action Planning", "Career Transition Support", "Skill Assessment and Gap Analysis"];
-  const tp = ["Practice Tests", "Question Banks", "Performance Analytics", "Adaptive Learning","Community Forum"];
+  const tp = ["Mock Tests", "Question Banks", "Performance Analytics", "Adaptive Learning","Community Forum"];
   const va = ["Mock Interviews", "Application Guidance", "Visa Requirements", "Country-Specific Information", "Post-Visa Support"];
   const ela = ["Utility Bill Assistance", "Hostel/PG Listings", "Repayment Plans", "Safety and Security", "Accommodation Verification"];
   const sfs = ["Scholarship Database", "Remittance Services", "Customer Support", "Financial Aid Calculator", "Eligibility Checker"];

@@ -410,11 +410,11 @@ export function GlobeDemo() {
           className="div">
           <h2
             className="text-center text-xl md:text-4xl font-bold text-black ">
-          Your Gateway to the World’s Best Universities
+          Your Gateway to the World’s Best Institutions
           </h2>
           <p
             className="text-center text-base md:text-sm font-normal text-neutral-700  max-w-md mt-2 mx-auto">
-            From selecting the right university to handling visa formalities, we are dedicated to guiding you through every step of your international education journey.
+            From selecting the right institute to handling visa formalities, we are dedicated to guiding you through every step of your international education journey.
           </p>
         </motion.div>
         <div

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { AnimatedModalDemo } from './elements/AnimatedModalDemo';
 import Btn from './elements/Btn';
+import { Bounce, toast } from 'react-toastify';
 
 const ContactUs = () => {
     const formRef = useRef();
@@ -21,38 +22,66 @@ const ContactUs = () => {
     const handleMessageChange = (event) => {
         setMessage(event.target.value);
     };
+    const payload={
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+        };
     const handleForm = async (e) => {
         e.preventDefault()
         if (name.length < 3) {
-            setError("Oops! Name can't be less than 3 characters.")
+            toast.error("Oops! Name can't be less than 3 characters.", payload);
         }
         else if (!(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(Email))) {
-            setError("Oops! Email is Invalid")
+            toast.error('Oops! Email is Invalid',payload);
         }
         else if (Message.length === 0) {
-            setError("Oops! You forget to put Message.")
+            toast.error('Oops! You forget to put Message.',payload);
         }
         else if (Phone.length != 10) {
-            setError("Oops! Invalid Phone No.")
+            toast.error('Oops! Invalid Phone No.',payload);
+            
         }
         else {
             try {
-                alert("finnak")
-                let formData = new FormData();
-                formData.append('Name', 'ABC');   //append the values with key, value pair
-                formData.append('Email', 20);
-                formData.append('Phone', 20);
-                formData.append('Message', 20);
-                // const config = {
-                //     headers: { 'content-type': 'multipart/form-data' }
-                // }
-                const response = await fetch("https://script.google.com/macros/s/AKfycbxC5rXrhiU9I8afRKpjy08KwqAJ0KrXgthIFEZoyqa6A76iEBctpDKASMkucgh7wWzgNg/exec", {
+                await fetch('https://studyio-backend-production.up.railway.app/contact-query', {
                     method: 'POST',
-                    body: formData,    // ERROR THERE
-                });
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                      name: name,
+                      email: Email,
+                      phone: Phone,
+                      message: Message,
+                    }),
+                  });
             } catch (e) {
                 console.error(e);
             }
+            
+            toast.success('😉 Hey '+name+', our team will Contact you Shortly', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+                });
+                setMessage("");
+            setName("");
+            setPhone("");
+            setEmail("");
+            setMessage("");
         }
 
 
@@ -66,7 +95,7 @@ const ContactUs = () => {
                     <div class="lg:mb-0 mb-10">
                         <div class="group w-full h-full">
                             <div class="relative h-full">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/IMG_9276.webp?alt=media&token=a9eb80f0-1405-467b-a24e-41b2360a13ce" alt="ContactUs tailwind section" class="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover" />
+                                <img src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/selected%5C%2Fcontact-image%20(1).jpg?alt=media&token=b5ff7173-40f5-49ca-90c1-986d7590ade5" alt="ContactUs tailwind section" class="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover" />
 
                                 <div class="absolute bottom-0 w-full lg:p-11 p-5">
                                     <div class="bg-white rounded-lg p-6 block">
@@ -74,7 +103,7 @@ const ContactUs = () => {
                                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M22.3092 18.3098C22.0157 18.198 21.8689 18.1421 21.7145 18.1287C21.56 18.1154 21.4058 18.1453 21.0975 18.205L17.8126 18.8416C17.4392 18.9139 17.2525 18.9501 17.0616 18.9206C16.8707 18.891 16.7141 18.8058 16.4008 18.6353C13.8644 17.2551 12.1853 15.6617 11.1192 13.3695C10.9964 13.1055 10.935 12.9735 10.9133 12.8017C10.8917 12.6298 10.9218 12.4684 10.982 12.1456L11.6196 8.72559C11.6759 8.42342 11.7041 8.27233 11.6908 8.12115C11.6775 7.96998 11.6234 7.82612 11.5153 7.5384L10.6314 5.18758C10.37 4.49217 10.2392 4.14447 9.95437 3.94723C9.6695 3.75 9.29804 3.75 8.5551 3.75H5.85778C4.58478 3.75 3.58264 4.8018 3.77336 6.06012C4.24735 9.20085 5.64674 14.8966 9.73544 18.9853C14.0295 23.2794 20.2151 25.1426 23.6187 25.884C24.9335 26.1696 26.0993 25.1448 26.0993 23.7985V21.2824C26.0993 20.5428 26.0993 20.173 25.9034 19.8888C25.7076 19.6046 25.362 19.4729 24.6708 19.2096L22.3092 18.3098Z" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
-                                            <h5 class="text-black text-base font-normal leading-6 ml-5">+91 9992330440 <span className='mx-3'>/</span> +91-9992668044</h5>
+                                            <h5 class="text-black text-base font-normal leading-6 ml-5">+91 9992330440 </h5>
                                         </a>
                                         <a bg-orange-500 class="flex items-center mb-6">
                                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,18 +127,21 @@ const ContactUs = () => {
                     <form ref={formRef} onSubmit={(e) => handleForm(e)} class="bg-gray-50 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl align-middle">
                         <h3 className='font-semibold text-red-600 text-center animate-bounce'>{Error}</h3>
                         <h2 class="text-purple-900 font-manrope text-4xl font-semibold leading-10 mb-11 text-center">Send Us A Message</h2>
-                        <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Name" onChange={handleChange} required />
-                        <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Email" onChange={handleEmailChange} required />
-                        <input type="number" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Phone" onChange={handlePhoneChange} required />
+                        <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Name" value={name} onChange={handleChange} required />
+                        <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Email" value={Email} onChange={handleEmailChange} required />
+                        <input type="number" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Phone" value={Phone} onChange={handlePhoneChange} required />
 
-                        <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Message" onChange={handleMessageChange} />
+                        <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Message" value={Message} onChange={handleMessageChange} required/>
                         {/* <button class="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 hover:bg-indigo-800 bg-indigo-600 shadow-sm">Send</button> */}
                         <div className='flex justify-center'>
-                            <button type="submit" className="relative inline-flex h-12 overflow-hidden rounded-full p-[4px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-                                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ef7f1a_0%,#393BB2_50%,#ef7f1a_100%)]" />
-                                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gray-900 px-10 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                                    {"Send my Query"}
-                                </span>
+                        <button type="submit"
+                                class="flex gap-2 justify-center items-center py-3.5 px-7 rounded-full text-white bg-gradient-to-tr from-orange-500 to-purple-900 shadow-md w-fit transition-all duration-500 mx-auto xl:mx-0 hover:bg-purple-900">Submit<svg
+                                    width="17" height="13" viewBox="0 0 17 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.5 6.88281L14.8333 6.88281M10.6667 11.8828L15.0774 7.47207C15.3552 7.19429 15.4941 7.0554 15.4941 6.88281C15.4941 6.71022 15.3552 6.57133 15.0774 6.29356L10.6667 1.88281"
+                                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                             </button>
 
                         </div>

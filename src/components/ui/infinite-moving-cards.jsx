@@ -7,7 +7,7 @@ import "../../index.css";
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
-  speed = "fast",
+  speed = "slow",
   pauseOnHover = true,
   className,
 }) => {
@@ -64,12 +64,12 @@ export const InfiniteMovingCards = ({
       }
     }
   };
-
+  // [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]
   return (
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 max-w-7xl overflow-hidden ", //put it here
         className
       )}
     >
@@ -100,17 +100,9 @@ export const InfiniteMovingCards = ({
 
               <span className="relative z-20 text-sm leading-[1.6] text-gray-700 font-normal">
                 {/* {item.quote} */}
-                <img src="https://lepublicassets.leverageedu.com/pallaviThumbnail.png" alt="" />
+                <img src={item.img} alt="" />
                  <button className="absolute border  bg-orange-500 -mt-8 m-5 p-5 rounded-full text-xl ">▶</button>
               </span>
-              <div className="relative z-20 mt-6  items-center bg-black">
-                <span className=" gap-1">
-                  <span className="text-sm leading-[1.6] text-gray-800 font-normal">
-                  
-                  </span>
-                 
-                </span>
-              </div>
             </blockquote>
           </li>
           </>
