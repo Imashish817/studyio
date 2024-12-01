@@ -101,7 +101,7 @@ export const InfiniteMovingCards = ({
               <span className="relative z-20 text-sm leading-[1.6] text-gray-700 font-normal">
                 {/* {item.quote} */}
                 <img src={item.img} alt="" />
-                 <button className="absolute border  bg-orange-500 -mt-8 m-5 p-5 rounded-full text-xl ">▶</button>
+                 <a href={item.video} target="_blank" className="absolute border  bg-orange-500 -mt-8 m-5 p-5 rounded-full text-xl ">▶</a>
               </span>
             </blockquote>
           </li>

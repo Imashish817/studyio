@@ -21,13 +21,13 @@ export function TimelineDemo() {
             className="text-netural   text-xs md:text-sm font-normal mb-1 ">We offer personalized guidance to students, helping them align their academic goals with their desired career path. By assisting them in finding suitable courses and institutions, we empower students to make informed decisions that set them up for future success.        </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/cc.png?alt=media&token=7abb9304-c4df-44c8-8995-88ac4422b132"
+              src="https://i.ibb.co/4tvbXT5/cc.png"
               alt="startup template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4 " />
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/cc2-removebg-preview.png?alt=media&token=0ac69d51-e33c-405d-9a34-b9cf3e92c2a9"
+              src="https://i.ibb.co/r5t8462/cc2-removebg-preview.png"
               alt="startup template"
               width={500}
               height={500}
@@ -74,13 +74,13 @@ export function TimelineDemo() {
           className="text-netural   text-xs md:text-sm font-normal mb-1 ">Are you feeling overwhelmed by the upcoming exams? Don't worry, we're here to help. Our expert tutors offer personalized guidance and effective strategies to help you ace your exams. With our comprehensive test preparation courses, you'll gain the confidence and skills needed to excel. Learn from experienced educators, practice with realistic exam simulations, and discover proven techniques to maximize your performance.</p>
         <div className="grid grid-cols-2 gap-4">
         <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/exam-removebg-preview.png?alt=media&token=00e8ea74-c7e1-4f48-a6f9-92d056712c3e"
+            src="https://i.ibb.co/GvvGsjT/exam-removebg-preview.png"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4" />
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/OIP.jfif?alt=media&token=279a6676-c295-41a5-81e9-d14a53b43d2e"
+            src="https://i.ibb.co/sbXFjjQ/OIP.jpg"
             alt="startup template"
             width={500}
             height={500}
@@ -102,13 +102,13 @@ export function TimelineDemo() {
           </p>
         <div className="grid grid-cols-2 gap-4">
         <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/VISA-2.png?alt=media&token=d28a114a-8cca-4121-b862-f5d09ced7171"
+            src="https://i.ibb.co/vmkkktb/VISA-2.png"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4" />
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/VISA.png?alt=media&token=9c8d15c1-aef1-42de-9f07-89ee324d5721"
+            src="https://i.ibb.co/60x76Qt/VISA.png"
             alt="startup template"
             width={500}
             height={500}
@@ -130,13 +130,13 @@ export function TimelineDemo() {
           </p>
         <div className="grid grid-cols-2 gap-4">
         <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/LOAN.png?alt=media&token=bf04b48e-3aec-4dc2-bf0d-7c9b62004e7d"
+            src="https://i.ibb.co/kJrMVDR/LOAN.png"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4" />
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/hotel.png?alt=media&token=e9c1adde-26db-459f-bd6b-559f47022658"
+            src="https://i.ibb.co/Ky19xNz/hotel.png"
             alt="startup template"
             width={500}
             height={500}
@@ -158,13 +158,13 @@ export function TimelineDemo() {
           </p>
         <div className="grid grid-cols-2 gap-4">
         <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/scholarship.avif?alt=media&token=bc1b4da5-af80-4ad1-9802-676cd4f3d88e"
+            src="https://i.ibb.co/f2dFLQH/scholarship.jpg"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-3/4" />
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/9319770_4136942.jpg?alt=media&token=0abeb164-90ba-40e4-94d9-1e5377b99586"
+            src="https://i.ibb.co/PY6WdSN/9319770-4136942.jpg"
             alt="startup template"
             width={500}
             height={500}

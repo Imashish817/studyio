@@ -30,7 +30,7 @@ export function ExpandableCardDemo() {
 
   return (<>
  <div
-        className="h-[10rem] rounded-md flex flex-col antialiased bg-white  items-center justify-center relative overflow-hidden mt-[10%]">
+        className=" rounded-md flex flex-col antialiased bg-white  items-center justify-center relative overflow-hidden mt-[10%]">
         <div className="max-w-2xl mx-auto  px-4 md:px-8 lg:px-10 ">
           
           <p className="text-3xl text-purple-900 md:text-4xl mb-4  max-w-4xl font-semibold">
@@ -199,7 +199,7 @@ const cards = [
   {
     description: " Sr. Director",
     title: "Sanjay Batra",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/teams%2FSanjay.png?alt=media&token=052e31ec-1307-4fdd-b788-e6a64cb5cf06",
+    src: "https://i.ibb.co/RTKL1CT/Sanjay.png",
     ctaText: "Visit",
     ctaLink: "",
     content: () => {
@@ -212,7 +212,7 @@ const cards = [
   {
     description: "CEO",
     title: "Chirag Mehta",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/teams%2FChirag.jpg?alt=media&token=e9a13339-1c4a-4805-b9b4-21ff6bec6f5f",
+    src: "https://i.ibb.co/f1TcP9K/Chirag.jpg",
     ctaText: "Visit",
     ctaLink: "https://www.linkedin.com/in/chirag-mehta-92172a54",
     content: () => {
@@ -230,7 +230,7 @@ const cards = [
   {
     description: "Director - Career Counselling",
     title: "Dr. Monika Bargujjar",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/teams%2FMonika.JPG?alt=media&token=e17d318f-47f9-4b20-a663-ca3ffb4bc623",
+    src: "https://i.ibb.co/BLQY2Hf/Monika.jpg",
     ctaText: "Visit",
     ctaLink: "https://www.linkedin.com/in/dr-monika-bargujjar-743348175",
     content: () => {
@@ -247,7 +247,7 @@ const cards = [
   {
     description: "Director - Services & Marketing",
     title: "Ashima Vij",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Ashima%20Vij.jpg?alt=media",
+    src: "https://i.ibb.co/YWx5WSz/Ashima-Vij.jpg",
     ctaText: "Visit",
     ctaLink: "https://www.linkedin.com/in/ashima-vij-60111196",
     content: () => {
@@ -264,7 +264,7 @@ const cards = [
   {
     description: "Director - ELT and Operations",
     title: "Priya Kumra",
-    src: "https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/Priya-2.jpg?alt=media",
+    src: "https://i.ibb.co/VVm3m60/Priya-2.jpg",
     ctaText: "Visit",
     ctaLink: "https://www.linkedin.com/in/priya-kumra-mba-485914324",
     content: () => {

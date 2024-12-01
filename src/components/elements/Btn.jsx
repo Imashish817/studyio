@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Btn = ({text,form}) => {
-  console.log(form);
+
   const handleForm=(form)=>{
     if(form==="firststep")
     {
-      console.log("hi");
+
       <Link to="/FirstStep"></Link>
     }
   }

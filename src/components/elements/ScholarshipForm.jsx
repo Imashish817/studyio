@@ -1,8 +1,12 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Bounce, toast } from 'react-toastify';
 import { APIURL } from '../../utils/constant';
+import { scrollToTop } from '../../utils/ScrollToTop';
 
 const ScholarshipForm = () => {
+  useEffect(() => {
+    scrollToTop()
+  }, [])
   const name = useRef("");
   const email = useRef("");
   const phone = useRef("");
@@ -10,7 +14,7 @@ const ScholarshipForm = () => {
   const tenth = useRef("0");
   const grad = useRef("0");
   const startchoice = useRef(null);
-  const [option, setOption] = useState()
+  const [option, setOption] = useState("Canada")
   const otherC = useRef("");
   const handleCountry = (event) => {
     setOption(event.target.value)
@@ -27,6 +31,7 @@ const ScholarshipForm = () => {
     transition: Bounce,
   };
   const HandleSubmitForm = async () => {
+    console.log(option === "OT")
     if (option === "OT") {
       setOption(otherC.current.value)
     }
@@ -64,19 +69,8 @@ const ScholarshipForm = () => {
           start: startchoice.current.value
         })
       };
-      console.log(JSON.stringify({
-        name: name.current.value,
-        email: email.current.value,
-        phone: phone.current.value,
-        "10th": tenth.current.value,
-        "12th": twelthth.current.value,
-        grad: grad.current.value,
-        preferedCountry: option,
-        start: startchoice.current.value
-      }))
       try {
         const response = await fetch('https://studyio-backend-production.up.railway.app/Scholarship-query', requestOptions);
-        console.log(response.status)
         name.current.value = "",
           email.current.value = "",
           phone.current.value = "",
@@ -99,10 +93,6 @@ const ScholarshipForm = () => {
         console.error('Error:', error);
       }
     };
-    console.log(name.current.value)
-    console.log(email.current.value)
-    console.log(phone.current.value)
-    console.log(option)
 
 
   }
@@ -194,7 +184,7 @@ const ScholarshipForm = () => {
                 </div>
               </div>
               <div class="text-gray-600 bg-gradient-to-r from-white mt-5">
-                <img className="" src='https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/selected%5C%2Fsc.jpg?alt=media&token=16791011-e23e-4eec-9eba-9375f57010f7'></img>
+                <img className="" src='https://i.ibb.co/vzMmF0g/sc.jpg'></img>
               </div>
             </div>
           </div>

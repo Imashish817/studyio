@@ -12,7 +12,6 @@ import {
 export function SignupFormDemo() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted");
   };
 
   return (

@@ -22,43 +22,38 @@ export function InfiniteMovingCardsDemo() {
 
 const testimonials = [
   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
-    img:"https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/testimonials%2FRohit.webp?alt=media&token=e223db0d-a32b-43bb-b82e-dd54a3cde5e4"
+    video:"https://www.youtube.com/shorts/86_Yy3f29ws",
+    img:"https://i.ibb.co/jTQL7qq/Rohit.webp"
 
   },
   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
-    img:"https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/testimonials%2FDolli.webp?alt=media&token=dfa598ad-5dfc-49fa-ac20-22941d41caba"
+    video:"https://youtu.be/TmSLQghByMc?si=syW3DEU1nI_aOpYu",
+    img:"https://i.ibb.co/tZvK6vc/Dolli.webp"
 
   },
   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
-    img:"https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/testimonials%2FNamita.webp?alt=media&token=a5820628-5e6c-49a0-9164-98d916ba9d06"
+    video:"https://www.youtube.com/shorts/8KukOCJ3rRI",
+    img:"https://i.ibb.co/cYCmwpz/Namita.webp"
 
   },
   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
-    img:"https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/testimonials%2FPrateek.webp?alt=media&token=a4df8e3a-1637-470c-a577-74123878818d"
+    video:"https://www.youtube.com/@studycultureio",
+    img:"https://i.ibb.co/2v7cWz8/Prateek.webp"
 
   },
   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
-    img:"https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/testimonials%2FSam.webp?alt=media&token=157cbc0b-e4b2-4fd6-897e-425245a448a7"
+    video:"https://www.youtube.com/@studycultureio",
+    img:"https://i.ibb.co/qn9VrwV/Sam.webp"
+
+  },
+  {
+    video:"https://www.youtube.com/shorts/gtxt9RU84hU",
+    img:"https://i.ibb.co/cYCmwpz/Namita.webp"
+
+  },
+  {
+    video:"https://www.youtube.com/shorts/3JdpLwr5AUw",
+    img:"https://i.ibb.co/fkv0b13/Sukhpreet.png"
 
   },
 

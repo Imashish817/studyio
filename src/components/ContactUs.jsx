@@ -1,9 +1,13 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { AnimatedModalDemo } from './elements/AnimatedModalDemo';
 import Btn from './elements/Btn';
 import { Bounce, toast } from 'react-toastify';
+import { scrollToTop } from '../utils/ScrollToTop';
 
 const ContactUs = () => {
+    useEffect(() => {
+        scrollToTop()
+      }, [])
     const formRef = useRef();
     const [name, setName] = useState('');
     const [Email, setEmail] = useState('');
@@ -95,7 +99,7 @@ const ContactUs = () => {
                     <div class="lg:mb-0 mb-10">
                         <div class="group w-full h-full">
                             <div class="relative h-full">
-                                <img src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/selected%5C%2Fcontact-image%20(1).jpg?alt=media&token=b5ff7173-40f5-49ca-90c1-986d7590ade5" alt="ContactUs tailwind section" class="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover" />
+                                <img src="https://i.ibb.co/vBLYFhf/blended.png" alt="ContactUs tailwind section" class="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-black object-cover " />
 
                                 <div class="absolute bottom-0 w-full lg:p-11 p-5">
                                     <div class="bg-white rounded-lg p-6 block">

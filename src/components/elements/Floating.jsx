@@ -1,7 +1,7 @@
 
 import React from "react";
 import { FloatingNav } from "../ui/floating-navbar";
-import { IconHome, IconMessage, IconTools, IconUser } from "@tabler/icons-react";
+import { IconHome, IconMessage, IconPlaneInflight, IconTools, IconUser } from "@tabler/icons-react";
 
 export function FloatingNavDemo() {
   const navItems = [
@@ -28,6 +28,13 @@ export function FloatingNavDemo() {
       link: "/contact",
       icon: (
         <IconMessage className="h-5 w-5 text-neutral-500 " />
+      ),
+    },
+    {
+      name: "Destinations",
+      link: "/contact",
+      icon: (
+        <IconPlaneInflight className="h-5 w-5 text-neutral-500 " />
       ),
     },
     

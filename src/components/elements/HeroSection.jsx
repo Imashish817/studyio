@@ -5,6 +5,7 @@ import { TextGenerateEffectDemo } from './Textgenerate'
 import { BorderButton } from './GlowButton'
 import Btn from './Btn'
 import { Link } from 'react-router-dom'
+import { scrollToTop } from '../../utils/ScrollToTop'
 const HeroSection = () => {
   return (
     // <div>
@@ -50,17 +51,19 @@ const HeroSection = () => {
         <FlipWordsDemo />
         <TextGenerateEffectDemo />
         <div class="flex flex-wrap justify-center gap-2 lg:gap-7 my-6 lg:ml-5">
+        
           <Link to='/FirstStep'><button as={Link} className="text-nowrap inline-flex h-14 animate-shimmer items-center justify-center rounded-full border border-white bg-[linear-gradient(110deg,#581c87,45%,#ef7f1a,55%,#581c87)] bg-[length:200%_100%] px-6 font-semibold text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-white">
             Take Your First Step
           </button></Link>
+          
           <Link to='/Scholarship'><button as={Link} className="inline-flex h-14 animate-shimmer items-center justify-center rounded-full border border-white bg-[linear-gradient(110deg,#581c87,45%,#ef7f1a,55%,#581c87)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-white">
             Get Your Scholarship Plan
           </button></Link>
         </div>
         <div class="flex flex-wrap justify-center lg:gap-4 mt-10 ">
           <div className="flex flex-col items-center justify-start text-left">
-            <p className="font-bold lg:px-5 sm:px-0 text-center">50+ years</p>
-            <p className="lg:px-5  sm:px-0 text-sm text-center"> of Experience in<br /> Education Industry</p>
+            <p className="font-bold lg:px-5 sm:px-0 text-center">Over 50 Years</p>
+            <p className="lg:px-5  sm:px-0 text-sm text-center"> of Combined Expertise <br /> in the Education Industry</p>
           </div>
           <div className="border border-x-2 rounded-2xl border-purple-900"></div>
           <div className="flex flex-col items-center justify-start text-left">
@@ -70,7 +73,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div class="lg:max-w-2xl lg:w-full md:w-1/2 w-6/6">
-        <img class="object-cover object-center rounded" alt="hero" src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/home.jpg?alt=media&token=3d0fa57c-06ae-48e4-8e1e-78db5cfa0289" />
+        <img class="object-cover object-center rounded" alt="hero" src="https://i.ibb.co/D1xzMz9/home.jpg" />
       </div>
     </div>
   )

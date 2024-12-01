@@ -3,7 +3,9 @@ import React, { useRef } from 'react'
 import logo from "../components/data/img/logo.png"
 import { IconBrandWhatsapp, IconMailFilled, IconMapPinFilled, IconPhone } from '@tabler/icons-react'
 import { Bounce, toast } from 'react-toastify'
+import { Link } from 'react-router-dom'
 const Footer = () => {
+   
     const email = useRef("")
     const TostErrorPayload = {
         position: "top-right",
@@ -44,7 +46,7 @@ const Footer = () => {
                         <a href="https://pagedone.io/" class="flex justify-center lg:justify-start">
                             <img src={logo} />
                         </a>
-                        <p class="text-center text-gray-600">Experienced team in 20+ countries and supporting 1,00,000+ students.<br/><br></br>
+                        <p class="text-center text-gray-600">An experienced team spanning over 20 countries, supporting more than 100,000 students worldwide.<br/>
                             Have any query? contact us we are here for you.</p>
 
                         <div class="flex  space-x-4 sm:justify-center  ">
@@ -137,13 +139,13 @@ const Footer = () => {
                         <h4 class="text-lg text-gray-900 font-bold mb-9 text-center xl:text-left">Quick Links</h4>
                         <div class="flex gap-6 xl:gap-12 max-xl:justify-center">
                             <ul class="text-gray-600 transition-all duration-500 grid gap-6">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/services">Services</a></li>
+                                <li onClick={()=>  window.scrollTo(0, 0)}><Link to="/">Home</Link></li>
+                                <li><Link to="/services">Services</Link></li>
                                 
                             </ul>
                             <ul class="text-gray-600 transition-all duration-500 grid gap-6">
-                                <li><a href="/about">About </a></li>
-                                <li><a href="/contact">Contact</a></li>
+                                <li>< Link to="/about">About </Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
                                 
                             </ul>
                         </div>
@@ -168,11 +170,7 @@ const Footer = () => {
                     
                 </div>
             </div>
-            <div class="py-2 bg-indigo-50">
-                <div class="flex items-center justify-center">
-                    <h3 class="text-sm font-semibold text-gray-800 ">TEAMS&nbsp;&nbsp; AVAILABLE &nbsp;&nbsp;IN &nbsp;&nbsp;-&nbsp;&nbsp; HISAR &nbsp;&nbsp;|&nbsp;&nbsp; KARNAL &nbsp;&nbsp;|&nbsp;&nbsp; NOIDA &nbsp;&nbsp;|&nbsp;&nbsp; MORADABAD</h3>
-                </div>
-            </div>
+            
             
             
 

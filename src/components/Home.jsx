@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { GlobeDemo } from "./elements/Globe";
 
@@ -9,9 +9,14 @@ import { ExpandableCardDemo } from "./elements/Team";
 import HeroSection from "./elements/HeroSection";
 import { ModalFooter } from "./ui/animated-modal";
 import { WobbleCardDemo } from "./elements/WobbleCardDemo";
+import { scrollToTop } from "../utils/ScrollToTop";
 
 
 const Home = () => {
+  useEffect(() => {
+    scrollToTop()
+  }, [])
+  
   return (
     <>
       <HeroSection />

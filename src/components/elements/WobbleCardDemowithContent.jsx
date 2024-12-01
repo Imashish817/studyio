@@ -1,20 +1,21 @@
 
 import React from "react";
 import { WobbleCard } from "./wobblecard.tsx";
+import { moneyback, scollarship, women } from "../../utils/constant.js";
 
 export function WobbleCardDemo() {
   return (
     (<>
       
       <div
-        className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
+        className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full -mt-20">
 
         <WobbleCard
           containerClassName="col-span-1 lg:col-span-1 h-full bg-white min-h-[400px] lg:min-h-[300px] border rounded-2xl shadow-xl"
           className="">
           <div className="max-w-xs ">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/scollarship.png?alt=media&token=f740f7c8-bcce-4dfc-b054-fe4631b447bf"
+            src={scollarship}
             width={180}
             height={180}
             alt="linear demo image"
@@ -38,7 +39,7 @@ export function WobbleCardDemo() {
           To support the Indian Government’s initiative of ‘Beti Bachao, Beti Padhao’, we will be offering 50% off on our Test Prep, Counselling and Admissions services to 200 Female students every year. Open to all Women.
           </p>
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/women.png?alt=media&token=742fd139-0d49-438b-9246-c6ac7b658d6c"
+            src={women}
             width={150}
             height={150}
             alt="linear demo image"
@@ -56,7 +57,7 @@ export function WobbleCardDemo() {
             </p>
           </div>
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/cdn-img-e077c.appspot.com/o/moneyback.png?alt=media&token=a5770b94-3fa1-47da-ab55-1c9fb7d04b61"
+            src={moneyback}
             width={205}
             height={205}
             alt="linear demo image"
