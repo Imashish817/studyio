@@ -30,13 +30,18 @@ export function FloatingNavDemo() {
         <IconMessage className="h-5 w-5 text-neutral-500 " />
       ),
     },
-    {
-      name: "Destinations",
-      link: "/contact",
-      icon: (
-        <IconPlaneInflight className="h-5 w-5 text-neutral-500 " />
-      ),
-    },
+    // {
+    //   name: "Destinations",
+    //   link: "",
+    //   icon: (
+    //     <IconPlaneInflight className="h-5 w-5 text-neutral-500 " />
+    //   ),
+    //   subItems: [
+    //     { name: "Canada", link: "/Study-in/Canada", img:"https://i.ibb.co/Mh9WDfq/flag-11785192.png" },
+    //     { name: "USA", link: "/study-in/usa",  img:"https://i.ibb.co/1sGHkRc/flag-12361101-1.png" },
+    //     { name: "Australia", link: "/study-in/Australia",  img:"https://i.ibb.co/1sGHkRc/flag-12361101-1.png" },
+    //   ],
+    // },
     
   ];
 

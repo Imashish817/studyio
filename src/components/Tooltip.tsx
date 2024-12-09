@@ -36,7 +36,7 @@ export const TestimonialTooltip = () => {
     {
       id: 1,
       name: "",
-      designation: "Take Your First Step",
+      designation: "Sign Up Now!",
       image:
         "https://i.ibb.co/b2tVmJ9/Newlogo-optimized.png",
     }

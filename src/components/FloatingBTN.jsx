@@ -9,7 +9,7 @@ const FloatingBTN = () => {
     return (
         <div class="relative" onMouseEnter={() => setShow(true)} onMouseOut={() => setShow(false)} >
             <div className='fixed bottom-[10%] cursor-pointer right-11 '>
-               <Link to={'/FirstStep'}><TestimonialTooltip /></Link>
+               <Link target="_blank" to={'https://agentportal.studyculture.io/'}><TestimonialTooltip /></Link>
             </div>
         </div>
 

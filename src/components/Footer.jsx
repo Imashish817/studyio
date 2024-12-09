@@ -141,12 +141,12 @@ const Footer = () => {
                             <ul class="text-gray-600 transition-all duration-500 grid gap-6">
                                 <li onClick={()=>  window.scrollTo(0, 0)}><Link to="/">Home</Link></li>
                                 <li><Link to="/services">Services</Link></li>
-                                
+                                <li><Link target="_blank" to="https://agentportal.studyculture.io/">Portal</Link></li>
                             </ul>
                             <ul class="text-gray-600 transition-all duration-500 grid gap-6">
                                 <li>< Link to="/about">About </Link></li>
                                 <li><Link to="/contact">Contact</Link></li>
-                                
+                                <li><Link to="" className='text-white cursor-default'>.</Link></li>
                             </ul>
                         </div>
                     </div>

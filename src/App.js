@@ -17,7 +17,7 @@ import ScholarshipForm from "./components/elements/ScholarshipForm.jsx";
 import About from "./components/About.jsx";
 import { IconHeartFilled } from "@tabler/icons-react";
 import FloatingBTN from "./components/FloatingBTN.jsx";
-import { scrollToTop } from "./utils/ScrollToTop.js";
+import Canada from "./components/elements/Country.jsx";
 function App() {
   const space=" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
   return (<>
@@ -44,6 +44,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/FirstStep" element={<FirstStepForm />} />
         <Route path="/Scholarship" element={<ScholarshipForm />} />
+        <Route path="/Study-in/Canada" element={<Canada />} />
       </Routes>
       
       <WhatsApp />
