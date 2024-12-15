@@ -17,7 +17,7 @@ import ScholarshipForm from "./components/elements/ScholarshipForm.jsx";
 import About from "./components/About.jsx";
 import { IconHeartFilled } from "@tabler/icons-react";
 import FloatingBTN from "./components/FloatingBTN.jsx";
-import Canada from "./components/elements/Country.jsx";
+import StudyInCountry from "./components/elements/Country.jsx";
 function App() {
   const space=" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
   return (<>
@@ -44,7 +44,12 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/FirstStep" element={<FirstStepForm />} />
         <Route path="/Scholarship" element={<ScholarshipForm />} />
-        <Route path="/Study-in/Canada" element={<Canada />} />
+        <Route path="/Study-in/Canada" element={<StudyInCountry />} />
+        <Route path="/Study-in/USA" element={<StudyInCountry />} />
+        <Route path="/Study-in/Australia" element={<StudyInCountry />} />
+        <Route path="/Study-in/UK" element={<StudyInCountry />} />
+        <Route path="/Study-in/Germany" element={<StudyInCountry />} />
+        <Route path="/Study-in/Europe" element={<StudyInCountry />} />
       </Routes>
       
       <WhatsApp />
