@@ -22,8 +22,8 @@ export const women = "https://i.ibb.co/FkrYfv5/women-sc.png";
 
 export const CanadaData = {
     intro: {
-        key: "Canada",
-        value: "Canada is known for its world-class education, diverse cultures, and safe, welcoming environment. Students benefit from high-quality teaching, a balanced lifestyle, and the chance to gain work experience through programs like the Post-Graduation Work Permit (PGWP)",
+        key: "Canada?",
+        value: "Canada is known for its world-class education, diverse cultures, and safe, welcoming environment. Students benefit from high-quality teaching, a balanced lifestyle, and the chance to gain work experience through programs like the Post-Graduation Work Permit (PGWP).",
         flag: "https://t3.ftcdn.net/jpg/08/08/43/56/360_F_808435617_XJCcaVxd1tvKyxR2Szj8Pause7KSzRmK.jpg"
     },
     appProcess: [
@@ -158,7 +158,7 @@ export const CanadaData = {
             opt: [
                 {
                     key: "Eligibility",
-                    value: ["Must have completed a program at a Designated Learning Institution (DLI) that is at least 8 months long", "Program must lead to a degree, diploma, or certificate."]
+                    value: ["Must have completed a program at a Designated Learning Institution (DLI) that is at least 8 months long.", "Program must lead to a degree, diploma, or certificate."]
                 },
                 {
                     key: "Duration",
@@ -166,7 +166,7 @@ export const CanadaData = {
                 },
                 {
                     key: "Benefits",
-                    value: ["Allows you to work anywhere in Canada, for any employer", "Provides valuable Canadian work experience that can support permanent residency applications."]
+                    value: ["Allows you to work anywhere in Canada, for any employer.", "Provides valuable Canadian work experience that can support permanent residency applications."]
                 },
                 {
                     key: "Application Timeline",
@@ -187,7 +187,7 @@ export const USAData = {
     appProcess: [
         {
             key: "Choose Program and University:",
-            value: "Research universities and select a program that aligns with your career goals",
+            value: "Research universities and select a program that aligns with your career goals.",
             img: "https://i.ibb.co/z5Fjqt0/web-2799256.png"
         },
         {
@@ -197,7 +197,7 @@ export const USAData = {
         },
         {
             key: "Submit Applications:",
-            value: "Submit your application via university websites or through the Common Application portal (undergraduate) or directly for graduate programs",
+            value: "Submit your application via university websites or through the Common Application portal (undergraduate) or directly for graduate programs.",
             img: "https://i.ibb.co/B22M9zc/cv-6545436.png"
         },
         {
@@ -385,7 +385,7 @@ export const USAData = {
 
 export const AustraliaData = {
     intro: {
-        key: "Australia",
+        key: "Australia?",
         value: "Australia offers high-quality education, extensive research opportunities, and a vibrant student life. Known for its beautiful landscapes, students enjoy a balanced lifestyle and access to post-study work opportunities.",
         flag: "https://i.ibb.co/HnzrXMj/Download-wallpapers-Australia-Australian-flag-silk-flag-flags-of-the-world-for-desktop-free-Pictures.jpg"
     },
@@ -531,14 +531,14 @@ export const AustraliaData = {
 
 export const UKData = {
     intro: {
-        key: "United Kingdom",
+        key: "United Kingdom?",
         value: "The UK is renowned for its academic excellence, short course durations, and a rich blend of cultures. Students benefit from a strong global reputation and countless networking opportunities with industry leaders.",
         flag: "https://i.pinimg.com/1200x/73/4b/74/734b746336103f8eca748cb74b97324c.jpg"
     },
     appProcess: [
         {
             key: "Choose Your Program and University:",
-            value: "Research UK universities and select the course that fits your career aspirations..",
+            value: "Research UK universities and select the course that fits your career aspirations.",
             img: "https://i.ibb.co/z5Fjqt0/web-2799256.png"
         },
         {
@@ -564,7 +564,7 @@ export const UKData = {
         ,
         {
             key: "Apply for Tier 4 Student Visa:",
-            value: "Apply for a Tier 4 (General) student visa once you’ve received your offer and financial proof",
+            value: "Apply for a Tier 4 (General) student visa once you’ve received your offer and financial proof.",
             img: "https://i.ibb.co/MS7qswR/scan-8072901.png"
         }
 
@@ -674,7 +674,7 @@ export const UKData = {
 
 export const GermanyData = {
     intro: {
-        key: "Germany",
+        key: "Germany?",
         value: "Germany is celebrated for its tuition-free or low-cost education at public universities, especially for international students. It’s a tech and engineering powerhouse, known for quality education and innovative research.",
         flag: "https://i.ibb.co/wBwqPJT/istockphoto-178369709-612x612.jpg"
     },
@@ -691,7 +691,7 @@ export const GermanyData = {
         },
         {
             key: "Submit Applications:",
-            value: "Apply via the university’s application portal or through uni-assist for most programs",
+            value: "Apply via the university’s application portal or through uni-assist for most programs.",
             img: "https://i.ibb.co/B22M9zc/cv-6545436.png"
         },
         {
@@ -797,7 +797,7 @@ export const GermanyData = {
             opt: [
                 {
                     key: "Eligibility",
-                    value: ["Open to non-EU graduates of German universities",
+                    value: ["Open to non-EU graduates of German universities.",
                          "Must have completed a recognized degree in Germany."]
                 },
                 {
@@ -810,7 +810,7 @@ export const GermanyData = {
                 },
                 {
                     key: "Requirements",
-                    value: ["Proof of degree completion..",
+                    value: ["Proof of degree completion.",
                         "ufficient financial resources to support yourself.",
                         "Health insurance coverage."
                     ]
@@ -823,7 +823,7 @@ export const GermanyData = {
 
 export const EuropeData = {
     intro: {
-        key: "Europe",
+        key: "Europe?",
         value: "Europe offers a diverse, affordable education with international exposure. From the arts to sciences, Europe’s institutions are known for cultural diversity and innovation.",
         flag: "https://www.parleu2024.be/sites/default/files/styles/original_ratio_zero/public/2024-01/europa-vlag-1776253-pixabay.jpg"
     },
@@ -845,7 +845,7 @@ export const EuropeData = {
         },
         {
             key: "Wait for Admission Confirmation:",
-            value: "After submitting your application, wait for a response from the university",
+            value: "After submitting your application, wait for a response from the university.",
             img: "https://i.ibb.co/PQd5ybw/hourglass-1183805.png"
         },
         {
@@ -943,7 +943,7 @@ export const EuropeData = {
                 {
                     key: "EU Blue Card",
                     value: ["Available to graduates with job offers in high-demand fields, meeting minimum salary requirements.",
-                        "Offers long-term work and residency opportunities across participating EU countries",
+                        "Offers long-term work and residency opportunities across participating EU countries.",
                         "Leads to permanent residency after 33 months (or 21 months with language proficiency)."
                     ]
                 },

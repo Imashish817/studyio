@@ -50,7 +50,7 @@ export const FloatingNav = ({ navItems, className }) => {
                 {navItem.subItems.map((subItem, subIdx) => (
                   <Link key={`sub-link=${subIdx}`} to={subItem.link}
                     className=" px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100 flex hover:rounded-lg">
-                    <img src={subItem.img} className="h-7 "/><h3 className="text-nowrap m-auto px-5">{subItem.name}</h3>
+                    <img src={subItem.img} className="h-7 w-10"/><h3 className="text-nowrap my-auto px-5">{subItem.name}</h3>
                   </Link>
                 ))}
               </div>

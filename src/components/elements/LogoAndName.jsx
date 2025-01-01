@@ -9,7 +9,7 @@ const LogoAndName = ({data}) => {
                     {data.map((u) => {
                         return (
                             <div class=" shadow w-4/5 lg:w-1/6 bg-white rounded-2xl hover:scale-110">
-                                <img class=" mx-auto h-3/5 w-full  rounded-2xl bg-cover mb-3 " src={u.value} alt="Bonnie image" />
+                                <img class=" mx-auto h-24 rounded-2xl bg-cover mb-3 " src={u.value} alt="Bonnie image" />
                                 <h5 class=" mx-auto text-lg font-semibold text-gray-900 my-auto text-center p-2">{u.key}</h5>
                             </div >
                         )
