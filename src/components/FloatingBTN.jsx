@@ -8,7 +8,7 @@ const FloatingBTN = () => {
     const [show, setShow] = useState(false)
     return (
         <div class="relative" onMouseEnter={() => setShow(true)} onMouseOut={() => setShow(false)} >
-            <div className='fixed bottom-[10%] cursor-pointer right-11 '>
+            <div className='fixed bottom-[10%] cursor-pointer right-[46px] '>
                <Link target="_blank" to={'https://agentportal.studyculture.io/'}><TestimonialTooltip /></Link>
             </div>
         </div>

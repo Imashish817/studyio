@@ -952,4 +952,62 @@ export const EuropeData = {
 
     ]
 }
+
+export const WhyUs=[
+    {
+        title: "50+ Years of Experience",
+        para: "Over 50 Years of collective experience in the education industry ",
+        img: "https://i.ibb.co/2csP0jv/8992931.png"
+
+    },
+    
+    
+    {
+        title: "1,45,000+ Students Helped",
+        para: "Over 1,45,000 students helped by the team collectively in last 15 Years",
+        img: "https://i.ibb.co/Ks6c8Qq/aim-3.png"
+
+    },
+    {
+        title: "International Collaboration",
+        para: " Partnered with top universities across the globe",
+        img: "https://i.ibb.co/8K4wPyP/pp.png"
+
+    }
+]
+
+export const Services=[
+    {
+        title: "Personalized Career Counselling",
+        para: "Expert Guidance, Personalized Solutions",
+        img: "https://i.ibb.co/4tvbXT5/cc.png"
+
+    },
+    
+    
+    {
+        title: "Test Preparation",
+        para: "The Ultimate Test Prep Experience",
+        img: "https://i.ibb.co/GvvGsjT/exam-removebg-preview.png"
+
+    },
+    {
+        title: "Visa Assistance",
+        para: " Navigate the Visa Process with Confidence",
+        img: "https://i.ibb.co/60x76Qt/VISA.png"
+
+    },
+    {
+        title: "Education Loans & Accommodation",
+        para: "Tailored Loan Solutions, Reliable Accommodation",
+        img: "https://i.ibb.co/kJrMVDR/LOAN.png"
+
+    },
+    {
+        title: "Scholarships & Forex Services",
+        para: "Scholarships & Forex: Your Gateway to Success.",
+        img: "https://i.ibb.co/PY6WdSN/9319770-4136942.jpg"
+
+    }
+]
 // https://imgbb.com/
