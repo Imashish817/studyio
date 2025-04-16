@@ -31,7 +31,7 @@ const Home = () => {
       </div> 
       <TimelineDemo />
       
-      <ExpandableCardDemo />
+      {/* <ExpandableCardDemo /> */}
       <GlobeDemo />
       <ModalFooter/>
     </>

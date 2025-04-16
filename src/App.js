@@ -18,6 +18,8 @@ import About from "./components/About.jsx";
 import { IconHeartFilled } from "@tabler/icons-react";
 import FloatingBTN from "./components/FloatingBTN.jsx";
 import StudyInCountry from "./components/elements/Country.jsx";
+import Undermaintanace from "./components/Undermaintanace.jsx";
+import Kochi from "./components/Kochi.jsx";
 function App() {
   const space=" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"
   return (<>
@@ -50,6 +52,7 @@ function App() {
         <Route path="/Study-in/UK" element={<StudyInCountry />} />
         <Route path="/Study-in/Germany" element={<StudyInCountry />} />
         <Route path="/Study-in/Europe" element={<StudyInCountry />} />
+        <Route path="/center/kochi" element={<Kochi />} />
       </Routes>
       
       <WhatsApp />

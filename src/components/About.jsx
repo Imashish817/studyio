@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { BentoGridThirdDemo } from './elements/bento'
 import ThreeCards from './elements/ThreeCards'
 import { scrollToTop } from '../utils/ScrollToTop'
+import { WhyUs } from '../utils/constant'
 
 const About = () => {
     useEffect(() => {
@@ -48,8 +49,8 @@ const About = () => {
             
             <WobbleCardDemo />
             {/* <BentoGridThirdDemo/> */}
-            <ThreeCards/>
-            <ExpandableCardDemo />
+            <ThreeCards  h1={"Why"} h2={"Us?"} cards={WhyUs}/>
+            {/* <ExpandableCardDemo /> */}
         </div>
     )
 }

@@ -90,7 +90,7 @@ export const TestimonialTooltip = () => {
             width={100}
             src={testimonial.image}
             alt={testimonial.name}
-            className="object-scale-down !m-0 !p-0 object-top rounded-full h-16 w-16 bg-white border-orange-200 border-4 group-hover:scale-110 group-hover:z-30  relative transition duration-500"
+            className="object-scale-down !m-0 !p-0 object-top rounded-full h-[63px] w-[63px] bg-white border-orange-300 border-4 group-hover:scale-110 group-hover:z-30  relative transition duration-500"
           />
         </div>
       ))}
